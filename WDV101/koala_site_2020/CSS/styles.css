@@ -1,0 +1,18 @@
+.topBanner {
+  width: 100%;
+}
+
+#basicImg {
+  object-fit: contain;
+  width: 350px;
+}
+
+.copyrightContainer {
+  display: flex;
+  align-items: center;
+}
+
+.smallLogo {
+  width: 75px;
+  display: inline;
+}
