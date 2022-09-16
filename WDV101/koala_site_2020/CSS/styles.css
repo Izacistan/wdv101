@@ -15,6 +15,13 @@ h1, h2 {
   color: white;
 }
 
+p,
+ol,
+ul {
+  font-family: Arial, Verdana, Tahoma;
+  color: #F5F5F5;
+}
+
 /* NAVIGATION MENU */
 
 #mainNav {
