@@ -10,9 +10,18 @@ body {
 }
 
 /* HEADING STYLES */
+.topHeading {
+  border-bottom: solid 1px white;
+  color: #DEAE30;
+}
+
 h1, h2 {
   font-family: Manrope, Helvetica, Arial, Verdana; /*CUSTOM FONT HERE*/
   color: white;
+}
+
+h2 {
+  border-bottom: solid 2px white;
 }
 
 p,
@@ -22,24 +31,28 @@ ul {
   color: #F5F5F5;
 }
 
-/* NAVIGATION MENU */
+/* NAVIGATION BAR */
 
 #mainNav {
-  list-style: none;
-  display: flex;
-  background-color: #282A35;
-  padding: 25px;
-  position: fixed;
-  top: 0;
-  right: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F5F5F5;
 }
 
-.navLink {
+#mainNav li {
+  float: left;
+}
+
+li .navLink {
+  display: block;
+  font-size: 1.1rem;
+  color: black;
+  text-align: center;
+  padding: 18px 20px;
   text-decoration: none;
-  font-size: 1.5rem;
-  color: white;
-  transition: 0.5s;
-  padding: 25px 20px 25px 20px;
+  transition: 0.3s;
 }
 
 .navLink:hover {
@@ -47,15 +60,44 @@ ul {
   color: black;
 }
 
-/* IMAGE STYLING */
+/* MAIN CONTENT */
 .topBanner {
   width: 100%;
+}
+
+.headerContainer {
+  width: 75%;
+  padding: 20px 25px 20px 25px;
+  margin: auto;
 }
 
 #basicImg {
   object-fit: contain;
   width: 350px;
 }
+
+.basicContentContainer {
+  border: solid red 2px;
+  width: 70%;
+  margin: auto;
+  padding: 20px 50px 20px 50px;
+}
+
+p em {
+  color: #DEAE30;
+}
+
+.paragraphContainer {
+  /* padding: 0px 30px 30px 30px; */
+}
+
+/* .floatImgLeft {
+  float: left;
+}
+
+.floatImgRight {
+  float: right;
+} */
 
 .copyrightContainer {
   display: flex;
