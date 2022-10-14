@@ -224,7 +224,7 @@ FOOTER STYLES
   }
 
   .button:hover {
-    color: pink;
+    color: green;
     transition: .2s ease-in-out;
   }
 
