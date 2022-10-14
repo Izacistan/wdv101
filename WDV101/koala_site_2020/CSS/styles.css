@@ -89,6 +89,7 @@ li .navLink {
   margin: auto;
 }
 
+/* To find margins for these images, check the floatImgLeft and floatImgRight classes. */
 #basicImg {
   object-fit: contain;
   width: 350px;
