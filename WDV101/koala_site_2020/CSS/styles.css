@@ -1,30 +1,47 @@
 /***********************************
 UNIVERSAL STYLES FOR ALL KOALA pages
 ***********************************/
+
 * {
+  box-sizing: border-box;
   z-index: 0;
+  margin: 0px;
 }
 
 body {
-  background-color: #333333;
+  background-color: #F9FEFF;
 }
 
-/* HEADING STYLES */
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 10px;
+}
+/*************
+HEADING STYLES
+*************/
 .topHeading {
-  border-bottom: solid 1px white;
-  color: #DEAE30;
+  border-bottom: solid 1px #333333;
+}
+
+.headerContainer h1 {
+  font-size: 3rem;
 }
 
 h1, h2 {
-  font-family: Manrope, Helvetica, Arial, Verdana; /*CUSTOM FONT HERE*/
-  color: white;
+  font-family: 'Manrope', Helvetica, Arial, Verdana; /*CUSTOM FONT HERE*/
+  color: #DEAE30;
 }
 
 p,
 ol,
 ul {
   font-family: Arial, Verdana, Tahoma;
-  color: #F5F5F5;
+  color: black;
+  font-size: 1.1rem;
+  line-height: 2;
 }
 
 /* NAVIGATION BAR */
@@ -34,7 +51,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #F5F5F5;
+  background-color: #333333;
 }
 
 #mainNav li {
@@ -44,11 +61,12 @@ ul {
 li .navLink {
   display: block;
   font-size: 1.1rem;
-  color: black;
+  color: white;
   text-align: center;
   padding: 18px 20px;
   text-decoration: none;
   transition: 0.3s;
+  line-height: initial;
 }
 
 .navLink:hover {
@@ -62,7 +80,7 @@ li .navLink {
 }
 
 .headerContainer {
-  width: 75%;
+  width: 95%;
   padding: 20px 25px 20px 25px;
   margin: auto;
 }
@@ -70,34 +88,91 @@ li .navLink {
 #basicImg {
   object-fit: contain;
   width: 350px;
+  padding: 5px;
+  background-color: #DEAE30;
+  border: solid 2px #333333;
 }
 
-.basicContentContainer {
-  border: solid red 2px;
-  width: 70%;
-  margin: auto;
-  padding: 20px 50px 20px 50px;
+.contentContainer {
+  overflow: auto;
+  width: 90%;
+  margin: 50px auto;
+}
+
+.contentContainer p {
+  padding: 0px 30px 0px 0px;
 }
 
 p em {
   color: #DEAE30;
 }
 
-.paragraphContainer {
-  /* padding: 0px 30px 30px 30px; */
+.mainImage {
+  object-fit: contain;
+  width: 25%;
 }
 
-/* .floatImgLeft {
+.floatImgLeft {
   float: left;
+  margin-right: 25px;
 }
 
 .floatImgRight {
   float: right;
-} */
+  margin-left: 25px;
+}
+
+
+/************
+FOOTER STYLES
+************/
+.resourceContainer {
+  margin: auto;
+  width: 75%;
+  text-align: center;
+}
+
+.koalaResources {
+  display: flex;
+  list-style: none;
+}
+
+.koalaResources li {
+
+}
+
+footer {
+  width: 100%;
+  margin-top: 25px;
+  padding: 25px;
+  background-color: #333333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.internalFootFlex {
+  display: flex;
+}
+
+.toTopLink {
+  margin-right: 10px;
+  padding: 15px 25px;
+  background-color: #DEAE30;
+  color: black;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.toTopLink:hover {
+  background-color: white;
+}
 
 .copyrightContainer {
   display: flex;
   align-items: center;
+}
+.copyrightTxt {
+  color: white;
 }
 
 .smallLogo {
