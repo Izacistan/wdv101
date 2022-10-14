@@ -8,6 +8,10 @@ UNIVERSAL STYLES FOR ALL KOALA pages
   margin: 0px;
 }
 
+.remove {
+  display: none;
+}
+
 body {
   background-color: #F9FEFF;
 }
