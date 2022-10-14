@@ -130,6 +130,43 @@ FOOTER STYLES
   width: 70px;
 }
 
+/************
+HOMEWORK PAGE
+************/
+
+.mainContainer {
+  background-color: #333333;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+
+.mainHeader {
+  color: white;
+  padding-bottom: 25px;
+  border-bottom: white 1px solid
+}
+
+.mainNav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 0px 25px 0px;
+  border-bottom: white 1px solid;
+}
+
+.mainNav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: 0.2s;
+}
+
+.mainNav li a:hover {
+  color: gray;
+  transform: scale(1.1);
+}
+
 /* Things to ignore / HTML Elements I do not want to appear on mobile*/
 
 .phoneNumTxt {
@@ -296,41 +333,4 @@ FOOTER STYLES
     display: none;
   }
 
-}
-
-/************
-HOMEWORK PAGE
-************/
-
-.mainContainer {
-  background-color: #333333;
-  width: 75%;
-  margin: auto;
-  text-align: center;
-}
-
-.mainHeader {
-  color: white;
-  padding-bottom: 25px;
-  border-bottom: white 1px solid
-}
-
-.mainNav {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  padding: 0px 0px 25px 0px;
-  border-bottom: white 1px solid;
-}
-
-.mainNav li a {
-  color: white;
-  text-decoration: none;
-  font-size: 2rem;
-  transition: 0.2s;
-}
-
-.mainNav li a:hover {
-  color: gray;
-  transform: scale(1.1);
 }
