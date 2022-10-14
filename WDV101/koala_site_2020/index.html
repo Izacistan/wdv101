@@ -8,13 +8,16 @@
          LAST MODIFIED: September 1, 2022-->
     <meta name="description" content="Home page for Koala Bear National Information Center">
     <meta name="keywords" content="koala bear, information center, foundation, donate, KBNIC">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
     <style>
       p,
       ol,
       ul {
         font-family: Arial, Verdana, Tahoma;
-        color: #F5F5F5;
+        color: black;
       }
     </style>
   </head>
@@ -43,42 +46,62 @@
       </p>
     </div>
 
-    <img id="basicImg" class="floatImgLeft" src="images/koala_sleeping.jpg" alt="A koala sleeps in a tree">
-    <p><em>The Koala Bear National Information Center (KBNIC)</em> is the principal non-profit,
-      non-government organization dedicated to the conservation and effective management of
-      the wild koala and its habitat.
-    </p>
-    <p>The KBNIC was formed in 2006. Since our founding  the KBNIC has grown from a small group
-      of people interested in researching koala disease, to a well-known, global organization with
-      a strong track record in strategic koala research, conservation and community education with
-      a huge focus on mapping -- our absolute strength.
-    </p>
+    <div class="contentContainer">
+      <img id="basicImg" class="floatImgLeft" src="images/koala_sleeping.jpg" alt="A koala sleeps in a tree">
+      <h2>About Us</h2>
+      <p><em>The Koala Bear National Information Center (KBNIC)</em> is the principal non-profit,
+        non-government organization dedicated to the conservation and effective management of
+        the wild koala and its habitat.
+      </p>
+      <p>The KBNIC was formed in 2006. Since our founding  the KBNIC has grown from a small group
+        of people interested in researching koala disease, to a well-known, global organization with
+        a strong track record in strategic koala research, conservation and community education with
+        a huge focus on mapping -- our absolute strength.
+      </p>
+      <br>
+      <p>Fugiat dolorem rem laboriosam voluptates aut architecto ipsa. Blanditiis molestiae
+        voluptatem eius eius vel. Quia sequi magnam assumenda aut impedit. Dolore at quisquam
+        nihil unde reiciendis.</p>
+    </div>
 
-    <img id="basicImg"  class="floatImgRight" src="images/koala_dry_tree.jpg" alt="Koala holding onto a tree">
-    <p>Koalas are disappearing. Loss of koala habitat and koala food trees (eucalyptus leaves)
-      is the leading koala threat. Our cuddly koalas are loved around the world. Often called
-      a koala bear, they are actually marsupials not koala bears. Please help koalas by supporting
-      the Koala Bear Information Center.
-    </p>
+    <div class="contentContainer">
+      <img id="basicImg"  class="floatImgRight" src="images/koala_dry_tree.jpg" alt="Koala holding onto a tree">
+      <h2>Koalas are Disappearing</h2>
+      <p>Loss of koala habitat and koala food trees (eucalyptus leaves)
+        is the leading koala threat. Our cuddly koalas are loved around the world. Often called
+        a koala bear, they are actually marsupials not koala bears. Please help koalas by supporting
+        the Koala Bear Information Center.
+      </p>
+      <br>
+      <p>Fugiat dolorem rem laboriosam voluptates aut architecto ipsa. Blanditiis molestiae
+        voluptatem eius eius vel. Quia sequi magnam assumenda aut impedit. Dolore at quisquam
+        nihil unde reiciendis. Fugiat dolorem rem laboriosam voluptates aut architecto ipsa. Blanditiis molestiae
+        voluptatem eius eius vel. Quia sequi magnam assumenda aut impedit. Dolore at quisquam
+        nihil unde reiciendis.</p>
+    </div>
     <!--
     toPageTop link takes the user from the bottom all the way back to the top of the page.
     DIV starts on line on page, so it is not inline with the <a>'s above.
     -->
-    <div class="toPageTop">
-      <a href="#pageTop">To top of page</a>
-    </div>
+    <footer>
 
-    <div class="copyrightContainer">
-      <p class="copyrightTxt">© 2020 All rights reserved.</p><img class="smallLogo" src="images/koala_logo.gif" alt="Koala Bear National Information Center Logo">
-    </div>
+      <div class="internalFootFlex">
+        <div class="">
+          <a class="toTopLink" href="#pageTop">To Top of Page</a>
+        </div>
+        <!-- CSS Validator Button -->
+        <a  href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="https://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!"/>
+        </a>
+      </div> <!-- End: .internalFootFlex -->
 
-    <p>
-      <a href="https://jigsaw.w3.org/css-validator/check/referer">
-          <img style="border:0;width:88px;height:31px"
-              src="https://jigsaw.w3.org/css-validator/images/vcss"
-              alt="Valid CSS!" />
-      </a>
-    </p>
+      <div class="copyrightContainer">
+        <p class="copyrightTxt">© 2020 All rights reserved.</p><img class="smallLogo" src="images/koala_logo.gif" alt="Koala Bear National Information Center Logo">
+      </div>
+
+    </footer>
 
   </body>
 </html>
