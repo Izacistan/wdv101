@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+/*==========================================
+Making Flexible Image Gallery using CSS GRID
+--- 1) Set necessary images height/width to 100% (to take up 100% on their availble space in the container) and 'object-fit: cover;' is applied
+--- 2) When laying out 'grid-template-rows' make sure any rows your images appear on have 'vw' units assigned to them (must be same width in all image rows).
+--- 3) You will need to adjust 'vw' units as needed to achieve the correct dimensions. This is done by eyeballing it.
+--- 4) Once complete, your images should retain their dimensions/resolutions and adjust to any screen size properly, though depending on the design, you may need to use media queries.
+=====================================================================================================================================================================================*/
+
+/* Universal Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #F5F5F5;
+}
+
+/*==============
+PRIMARY GRID SETTINGS / Main Container Styles
+===================*/
+
+#mainContainer {
+  font-family: Spartan;
+}
+
+.logo {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/*==============
+  Main Navigation
+  ===========*/
+
+.navContainer {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around; /* Put ample Space between Menu items */
+  align-items: center; /* Center menu items within Nav bar */
+  background-color: black;
+  margin-top: 1em;
+  height: 65px;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  margin: 1em;
+}
+
+/*====================================
+Main Gallery Image Styling and Sizing
+=====================================*/
+
+.img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/*==========
+FOOTER STYLES
+===========*/
+
+#footContainer {
+  display: flex;
+  flex-direction: column; /* Set to Row by default. Stack Footer vertically for mobile devices. */
+  align-items: center;
+  background-color: black;
+  padding: 25px 0 10px 0; /* Gives footer more space to breath, between footer and main images */
+}
+
+.contactBarTxt {
+  background-color: black;
+  color: white;
+  font-size: 2em;
+  padding-bottom: 25px;
+}
+
+.footTxt {
+  background-color: black;
+  color: white;
+  font-size: 1.2em;
+}
+
+/* CONTACT Icons */
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 125px;
+  background-color: #f5f5f5;
+}
+
+.icon {
+  width: 100px;
+}
+
+.emailTxt {
+  color: white;
+}
+
+/* INSTAGRAM link */
+
+.divider {
+  border: 1px solid grey;
+  width: 75%;
+}
+
+#socialMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.followMeTxt {
+  color: white;
+}
+
+.iconSocialMobile {
+  width: 70px;
+}
+
+/* Things to ignore / HTML Elements I do not want to appear on mobile*/
+
+.phoneNumTxt {
+  display: none;
+}
+
+@media only screen and (min-width: 640px) {
+
+  /*===================================================================================
+  Setup Main GRID / Horizontal views mobile, and flexible for vert/horz views on Tablets
+  =====================================================================================*/
+
+  #mainContainer {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 125px repeat(3, 35vw) 1fr;
+    grid-template-areas: /* Use Grid Areas to accurately layout content exactly where needed */
+
+    "logo nav nav"
+    "img img img"
+    "img img img"
+    "img img img"
+    "foot foot foot"
+
+    ;
+  }
+
+  /* Logo and Navigation */
+
+  .logo {
+    grid-area: logo;
+    object-fit: contain;
+    height: 100px;
+    width: 75%;
+    margin: auto;
+  }
+
+  .navContainer {
+    position: static;
+    grid-area: nav;
+    height: 100px;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .button {
+    font-size: 1.3em;
+  }
+
+  /* Main Gallery of Images */
+
+  .img {
+    height: 100%;
+  }
+
+  /* Foot Container */
+
+  #footContainer {
+    grid-area: foot;
+  }
+
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /*=============================================================
+  Setup MAIN Grid / Flexible grid for Laptop/Desktop screen sizes
+   ============================================================*/
+
+  #mainContainer {
+    width: 80%; /* This makes the whole container slightly smaller than available screen space. */
+    margin: auto; /* Perfeclty center entire menu on screen */
+    margin-top: 2em;
+    grid-gap: 1.6em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 18vw) 300px;
+    grid-template-areas:
+
+      "logo img img img"
+      "nav img img img"
+      "nav img img img"
+      "... foot foot ..."
+    ;
+
+  }
+
+  /* Logo and Main Navigation */
+
+  .logo {
+    height: auto;
+  }
+
+  .navContainer {
+    flex-direction: column; /* Had been set to Row on smaller screens, but we want it stacked on larger screens */
+    height: 100%;
+    width: 80%; /* Allows Navigation to be slightly thinner than image gallery */
+    border-radius: 15px;
+    margin: auto; /* Perfectly center the Navigation menu */
+  }
+
+  .button {
+    font-size: 1.6rem
+  }
+
+  .button:hover {
+    color: green;
+    transition: .2s ease-in-out;
+  }
+
+  /* Image Gallery */
+
+  .img {
+    transition: .3s;
+    border-radius: 15px;
+    filter:grayscale(100%);
+  }
+
+  .img:hover { /* Turns pictures from Gray to Color on hover */
+      transform: scale(1.1); /* Makes images expand on hover */
+      filter: grayscale(0%);
+  }
+
+  /* Footer and Instagram */
+
+  #footContainer {
+    background-color: #f5f5f5;
+    margin: -2em; /* Cuts down on whitespace between Image Gallery and Foot Container */
+  }
+
+  .footTxt {
+    background-color: #f5f5f5;
+    color: black;
+  }
+
+  .emailTxt {
+    font-size: 1.2em;
+    color: black;
+  }
+
+/* Setup Gray to Color Animation on Hover */
+  .iconSocialMobile {
+    filter: grayscale(100%);
+    transition: 0.3s;
+  }
+
+  .iconSocialMobile:hover {
+    filter: grayscale(0%);
+  }
+/* HTML Elements to Ignore / Things I don't want on large screens*/
+
+  .contactBarTxt {
+    display: none;
+  }
+
+  .iconContainer {
+    display: none;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .followMeTxt {
+    display: none;
+  }
+
+}
