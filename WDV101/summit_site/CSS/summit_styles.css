@@ -86,6 +86,7 @@ NAVIGATION BAR
   top: 0;
   overflow: hidden;
   box-shadow: 0px 2px 25px var(--gray);
+  z-index: 10;
 }
 
 #mainNav li {
@@ -186,4 +187,35 @@ INDEX.HTML STYLES
   height: 65vh;
   margin-top: 100px;
   object-fit: cover;
+}
+
+/****************
++++++++++++++++++
+SALES.HTML STYLES
++++++++++++++++++
+****************/
+
+div.polaroid {
+  width: 40%;
+  background-color: var(--darkBlue);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.name-breed {
+  color: var(--white);
+}
+
+.age {
+  color: var(--lightBlue);
+  font-weight: bold;
+}
+
+.dogDescription {
+  color: var(--white);
 }
