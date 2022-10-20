@@ -39,6 +39,7 @@ p {
 }
 
 li {
+  font-family: 'Manrope', Helvetica, Arial, Verdana;
   list-style: square inside;
   line-height: 2rem;
   color: var(--text);
@@ -187,6 +188,7 @@ INDEX.HTML STYLES
   height: 65vh;
   margin-top: 100px;
   object-fit: cover;
+  opacity: 0.5;
 }
 
 /****************
