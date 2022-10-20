@@ -195,11 +195,17 @@ SALES.HTML STYLES
 +++++++++++++++++
 ****************/
 
+/* GALLERY styles */
 div.polaroid {
-  width: 40%;
+  width: 45%;
   background-color: var(--darkBlue);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
+}
+
+.galleryImg {
+  height: 50vh;
+  object-fit: cover;
 }
 
 div.container {

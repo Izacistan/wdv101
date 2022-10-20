@@ -10,6 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Summit Farms - Dogs for Sale</title>
+    <style>
+      #gallery {
+        margin-top: 75px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -24,37 +32,46 @@
       <h1>Dogs for Sale</h1>
       <h4>Summit Farms is recognized for producing outstanding Alaskan dogs</h4>
       <p>We offer a variety of breeds to choose from. Please browse our current listing of dogs and email us with any questions that you have.</p>
-      <div class="gallery">
+      <div id="gallery">
         <!-- <img src="../IMG/2. dogsForSale/husky3.jpg" alt="A picture of Mila the Alaskan Husky" class="galleryImg" style="width:100%">
         <img src="../IMG/2. dogsForSale/husky2.jpg" alt="A picture of Fang the Alaskan Husky" class="galleryImg" style="width:100%">
         <img src="../IMG/2. dogsForSale/husky1.jpg" alt="A picture of Jack the Alaskan Husky" class="galleryImg" style="width:100%"> -->
         <div class="polaroid">
-          <img src="../IMG/2. dogsForSale/husky1.jpg" alt="Jack the husky dog" style="width:100%">
+          <img class="galleryImg" src="../IMG/2. dogsForSale/husky1.jpg" alt="Jack the husky dog" style="width:100%">
           <div class="container">
             <h4 class="name-breed">Jack, Alaskan Husky</h4>
             <p class="age">6 years old</p>
             <p class="dogDescription">This former sled dog lives to play outside. While he is retired from pulling sleds, Jack enjoys
             playing fetch, going for runs, and passing his days outside.</p>
           </div>
-        </div>
+        </div> <!--END POLAROID-->
         <div class="polaroid">
-          <img src="../IMG/2. dogsForSale/husky2.jpg" alt="Mila the husky dog" style="width:100%">
+          <img class="galleryImg" src="../IMG/2. dogsForSale/husky2.jpg" alt="Mila the husky dog" style="width:100%">
           <div class="container">
             <h4 class="name-breed">Fang, Siberian Husky</h4>
             <p class="age">10 years old</p>
             <p class="dogDescription">This good boy is a former sled dog who now spends retirement eating treats and chasing squirrels.
             While he can be a grumpy old man, he has a soft spot for belly rubs and snuggles.</p>
           </div>
-        </div>
+        </div> <!--END POLAROID-->
         <div class="polaroid">
-          <img src="../IMG/2. dogsForSale/husky3.jpg" alt="Fang the husky dog" style="width:100%">
+          <img class="galleryImg" src="../IMG/2. dogsForSale/husky3.jpg" alt="Fang the husky dog" style="width:100%">
           <div class="container">
             <h4 class="name-breed">Mila, Alaskan Husky</h4>
             <p class="age">4 years old</p>
             <p class="dogDescription">Mila is the most gentle dog to ever grace our shelter. She enjoys going for walks and snuggling
             beside the fireplace during cold days.</p>
           </div>
-        </div>
+        </div> <!--END POLAROID-->
+        <div class="polaroid">
+          <img class="galleryImg" src="../IMG/2. dogsForSale/husky4.jpg" alt="Anuk the Alaskan Malamute" style="width:100%">
+          <div class="container">
+            <h4 class="name-breed">Anuk, Alaskan Malamute</h4>
+            <p class="age">6 years old</p>
+            <p class="dogDescription">This furry ball of energy enjoys going on long
+              hikes in the woods and rolling in the snow. She is very good around children and can match their energy levels.</p>
+          </div>
+        </div> <!--END POLAROID-->
       </div> <!-- END OF GALLERY -->
     </main>
     <footer>
