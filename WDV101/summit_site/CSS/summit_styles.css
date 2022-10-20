@@ -1,0 +1,166 @@
+/******************
+DEFAULT TEXT STYLES
+******************/
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Oswald', Helvetica, Arial, Verdana;
+}
+
+h1 {
+  font-size: 4rem;
+  color: var(--darkBlue);
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 0;
+  color: var(--text);
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: var(--text);
+}
+
+h4 {
+  font-size: 2rem;
+  margin: 0;
+  color: var(--text);
+}
+
+p {
+  font-family: 'Manrope', Helvetica, Arial, Verdana;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  color: var(--text);
+}
+
+li {
+  list-style: square inside;
+  line-height: 2rem;
+  color: var(--text);
+  font-size: 1.3rem;
+}
+
+a {
+  font-family: 'Manrope', Helvetica, Arial, Verdana;
+}
+
+
+/*******************
+GLOBAL COLOR PALETTE
+*******************/
+
+:root {
+  --darkBlue: #1A6E92;
+  --lightBlue: #00ECFF;
+  --beige: #FFFBE4;
+  --gray: #717B83;
+  --white: #FFF;
+  --text: #595958;
+}
+
+/************************
++++++++++++++++++++++++++
+UNIVERSAL PAGE FORMATTING
++++++++++++++++++++++++++
+
+1. Keeps the main content
+consistent throughout the
+website
+************************/
+
+main {
+  margin: auto;
+  width: 75%;
+}
+
+#basicImg {
+  object-fit: contain;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contentContainer {
+  overflow: auto;
+  width: 100%;
+  margin: 75px auto;
+}
+
+.mainImage {
+  object-fit: contain;
+  width: 25%;
+}
+
+.floatImgLeft {
+  float: left;
+  margin-right: 25px;
+}
+
+.floatImgRight {
+  float: right;
+  margin-left: 25px;
+}
+
+.inTextLink { /* For links within <p> tags. */
+  color: var(--darkBlue);
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.inTextLink:hover {
+  color: var(--lightBlue);
+  cursor: pointer;
+}
+
+/*************
+NAVIGATION BAR
+*************/
+#mainNav {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0px 2px 25px var(--gray);
+}
+
+#mainNav li {
+  float: right;
+  list-style: none;
+}
+
+li .navLink {
+  display: block;
+  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+  padding: 35px 35px;
+  text-decoration: none;
+  transition: 0.3s;
+  line-height: initial;
+}
+
+.navLink:hover {
+  color: var(--darkBlue);
+}
+
+/****************
++++++++++++++++++
+INDEX.HTML STYLES
++++++++++++++++++
+****************/
+
+/* Banner */
+
+.overlay {
+  background: rgba(39,62,84,0.82);
+}
+
+.bannerImg {
+  width: 100%;
+  height: 65vh;
+  object-fit: cover;
+  opacity: 0.7;
