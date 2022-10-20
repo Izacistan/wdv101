@@ -73,9 +73,45 @@ consistent throughout the
 website
 ************************/
 
+/*************
+NAVIGATION BAR
+*************/
+
+#mainNav {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  box-shadow: 0px 2px 25px var(--gray);
+}
+
+#mainNav li {
+  float: right;
+  display: block;
+  list-style: none;
+}
+
+li .navLink {
+  display: block;
+  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+  padding: 35px 35px;
+  text-decoration: none;
+  transition: 0.3s;
+  line-height: initial;
+}
+
+.navLink:hover {
+  color: var(--darkBlue);
+}
+
 /* MAIN STYLES */
 main {
-  margin: auto;
+  margin: 125px auto;
   width: 75%;
 }
 
@@ -120,6 +156,7 @@ main {
 }
 
 /* FOOTER STYLES*/
+
 footer {
   width: 100%;
   margin-top: 25px;
@@ -130,36 +167,6 @@ footer {
 .copyrightTxt {
   text-align: center;
   color: white;
-}
-
-/*************
-NAVIGATION BAR
-*************/
-#mainNav {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  box-shadow: 0px 2px 25px var(--gray);
-}
-
-#mainNav li {
-  float: right;
-  list-style: none;
-}
-
-li .navLink {
-  display: block;
-  font-size: 1.5rem;
-  color: black;
-  text-align: center;
-  padding: 35px 35px;
-  text-decoration: none;
-  transition: 0.3s;
-  line-height: initial;
-}
-
-.navLink:hover {
-  color: var(--darkBlue);
 }
 
 /****************
@@ -177,5 +184,6 @@ INDEX.HTML STYLES
 .bannerImg {
   width: 100%;
   height: 65vh;
+  margin-top: 100px;
   object-fit: cover;
-  opacity: 0.7;
+}

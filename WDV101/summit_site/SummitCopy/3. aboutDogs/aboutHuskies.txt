@@ -1,14 +1,14 @@
-the Alaskan Husky (heading1)
+About Alaskan Husky (heading1)
 
 The Alaskan Husky is a medium-sized sled dog and has been bred specifically for this purpose.
 They are the most common dog for competitive sled racing, both long and short distance.
-Alaskan Huskies are descdants of Siberian Huskies and Alaskan Malamutes, both of whom it shares many physical traits.
+Alaskan Huskies are descendants of Siberian Huskies and Alaskan Malamutes, both of whom it shares many physical traits.
 A few fun facts about Alaskan Huskies
 LIST
 They are typically taller than their Siberian counterparts
 Blue-eyed huskies, which are very common, get their eye color from their Siberian relatives
 They weigh between 35-75 lbs (16-34 kg)
-Their feet are incredably tough and can withstand long distances
+Their feet are incredibly tough and can withstand long distances
 END LIST
 
 Behavior (heading2)
