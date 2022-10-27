@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Skillset Form</title>
+<style>
+* {
+		box-sizing: border-box;
+		margin:0;
+		padding:0;
+		}
+
+	body  {
+			font-family: "Helvetica", Ariel, sans-serif;
+			font-size:125%;
+			color: #333;
+			background-color:#9bd;
+			}
+
+	form  {
+			background-color: lightgray;
+			width: 800px;
+			margin: 10px auto;
+			padding: 20px;
+			border: 2px solid black;
+			border-radius: 15px;
+
+					}
+	legend  {
+			width: 100%;
+			border-bottom: 1px dotted purple;
+			padding-bottom: 5px;
+			margin-bottom: 15px;
+			font-size:1.3em;
+			}
+
+	fieldset  {
+				width: 25em;
+				margin: 20px;
+				border:hidden;
+				}
+
+	fieldset div  {
+					margin: 5px 0;
+					}
+
+
+	input, select  {
+					font-size: 1.1em;
+					padding: 2px 5px 4px;
+					border-radius: 5px;
+					margin-top:5px;
+							}
+
+	label  {
+			width: 10em;
+			text-align: right;
+			padding-right: 0.5em;
+			}
+
+
+	input[type="checkbox"], input[type="radio"] {
+	  width: auto;
+	  margin-left: 5%; /*10em was making the Radio and Checkboxes way too far to the left, so I changed the left margin to something smaller.*/
+	}
+
+	input[type="checkbox"] ~ label, input[type="radio"] ~ label {
+	  width: auto;
+	  text-align: left;
+	  padding-left: 0.4em;
+	}
+
+
+	input[type=submit], input[type=reset] {
+								 color:white;
+								 background-color: black;
+								 border-radius: 200px;
+								 padding: 6px;
+								 width: 100px;
+								 margin-right: 30px;
+									}
+
+	input[type=submit]  {
+						margin-left: 25px;
+						}
+</style>
+</head>
+<body>
+<div id="formcontainer">
+<form id="contact_form" method="post" action="#">
+  <legend>My Skillset</legend>
+  <p style="font-style:italic;">Information about my education and skills.</p>
+  <fieldset>
+    <div>
+			<label for="firstname">First Name</label>
+			<input type="text" id="firstname" name="firstname" >
+		</div>
+
+		<div>
+			<label for="lastname">Last Name</label>
+			<input type="text" id="lastname" name="lastname" >
+		</div>
+    <p>My major is...</p>
+    <br>
+    <!-- BEGIN Radio buttons -->
+      <input class="radioAlign" type="radio" id="radioIT" name="majorBTN" value="CIS/BIS">
+      <label class="radioAlign" for="radioIT">Computer Science</label>
+      <br>
+      <input class="radioAlign" type="radio" id="radioITS" name="majorBTN" value="CyberSecurity">
+      <label class="radioAlign" for="radioITS">CyberSecurity</label>
+      <br>
+      <input class="radioAlign" type="radio" id="radioDMKT" name="majorBTN" value="Digital_Marketing">
+      <label class="radioAlign" for="radioDMKT">Digital Marketing</label>
+      <br>
+      <input class="radioAlign" type="radio" id="radioGD" name="majorBTN" value="Graphic_Design">
+      <label class="radioAlign" for="radioGD">Graphic Design</label>
+			<br>
+			<input class="radioAlign" type="radio" id="radioWebDev" name="majorBTN" value="Web_Development">
+      <label class="radioAlign" for="radioWebDev">Web Development</label>
+			<br>
+			<input class="radioAlign" type="radio" id="radioUndecided" name="majorBTN" value="Undecided">
+      <label class="radioAlign" for="radioUndecided">Undecided</label>
+      <br>
+    <!-- END Radio Buttons -->
+    <select id="experience" name="experience" style="font-size:0.9em;">
+      <option value="1year">1 year or less</option>
+      <option value="2years">2 years</option>
+      <option value="3_4years">3 - 4 years</option>
+      <option value="5+">5 years or more</option>
+    </select>
+    <label for="experience">Experience Level</label>
+		<p>I am skilled in...</p>
+		<br>
+		<!-- BEGIN Checkboxes -->
+		<input class="checkBX" type="checkbox" id="checkHTML" name="checkBTN" value="HTML">
+		<label class="checkBX" for="checkHTML">HTML</label>
+		<br>
+		<input class="checkBX" type="checkbox" id="checkCSS" name="checkBTN" value="CSS">
+		<label class="checkBX" for="checkCSS">CSS</label>
+		<br>
+		<input class="checkBX" type="checkbox" id="checkJS" name="checkBXBTN" value="JavaScript">
+		<label class="checkBX" for="checkJS">JavaScript</label>
+		<br>
+		<input class="checkBX" type="checkbox" id="checkOOP" name="checkBXBTN" value="Object_Oriented_Programming">
+		<label class="checkBX" for="checkOOP">Objected Oriented Programming</label>
+		<br>
+		<input class="checkBX" type="checkbox" id="checkBX" name="checkBXBTN" value="check">
+		<label class="checkBX" for="checkBX">CSS</label>
+		<br>
+		<!-- END Checkboxes -->
+  </fieldset>
+  <input type="submit" value="Submit"> <!--  Note: submit and reset do not need id or name attributes -->
+  <input type="reset"   value="Reset">
+</form>
+</div><!-- close id="formcontainer"-->
+</body>
+</html>
