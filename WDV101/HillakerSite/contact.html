@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport, tells the site to use the device's width when displaying, sets the scale to 1.0 -->
+    <meta name="description" content="Get in contact with Isaac Hillaker using this contact form.">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet"  href="CSS/contact.css">
+    <title>Contact Me - Isaac Hillaker</title>
+    <!-- AUTHOR: Isaac Hillaker
+         DATE: October 29, 2022
+         LAST MODIFIED: October 29, 2022-->
+  </head>
+
+  <body id="mainContainer"> <!-- Primary Grid Container / 12 Grid Children -->
+    <!-- Header Navigation Bar and Logo -->
+    <img class="logo" src="IMG/FFT_LogoplainSVG.svg"> <!-- Company Logo, Grid Item -->
+    <div class="navContainer"> <!-- Main navigation bar, Grid Item -->
+      <a href="../../index.html" class="button">Home</a>
+      <a href="about.html" class="button">About Me</a>
+      <a href="..//homework.html" class="button">Homework</a>
+      <a href="#" class="button" class="button">Contact</a>
+    </div>
+
+    <!-- BEGIN Form-->
+    <div id="formContainer">
+      <form id="contact_form" method="post" action="#">
+        <legend>Contact Me</legend>
+        <p>If you would like to get in contact with me, please fill out the contact form below.</p>
+        <fieldset>
+
+      		<label for="firstname">First Name</label>
+      		<input type="text" id="firstname" name="firstname">
+
+      		<label for="lastname">Last Name</label>
+      		<input type="text" id="lastname" name="lastname">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+
+          <p>Reason for contacting me (Select one)</p>
+          <br>
+          <!-- BEGIN Radio buttons -->
+          <input type="radio" id="business" name="checkBTN" value="Employment">
+      		<label for="business">Employment</label>
+      		<br>
+      		<input type="radio" id="questions" name="checkBTN" value="General_Questions">
+      		<label for="questions">General Questions</label>
+      		<br>
+      		<input type="radio" id="dnd" name="checkBTN" value="DnD">
+      		<label for="dnd">Dungeons & Dragons Advice</label>
+      		<br>
+          <!-- END Radio Buttons -->
+
+          <!-- Selection Box -->
+          <label for="experience">Experience Level</label><br>
+          <select id="experience" name="experience">
+            <option value="1year">1 year or less</option>
+            <option value="2years">2 years</option>
+            <option value="3_4years">3 - 4 years</option>
+            <option value="5+">5 years or more</option>
+          </select>
+
+      		<p>What services are you interested in?</p>
+      		<br>
+      		<!-- BEGIN Checkboxes -->
+          <input class="radioAlign" type="checkbox" id="radioIT" name="majorBTN" value="CIS/BIS">
+          <label class="radioAlign" for="radioIT">Website Design</label>
+          <br>
+          <input class="radioAlign" type="checkbox" id="radioDMKT" name="majorBTN" value="Digital_Marketing">
+          <label class="radioAlign" for="radioDMKT">Digital Marketing</label>
+          <br>
+          <input class="radioAlign" type="checkbox" id="radioGD" name="majorBTN" value="Graphic_Design">
+          <label class="radioAlign" for="radioGD">Graphic Design</label>
+          <br>
+          <input class="radioAlign" type="checkbox" id="radioWebDev" name="majorBTN" value="Web_Development">
+          <label class="radioAlign" for="radioWebDev">Web Development</label>
+          <br>
+      		<!-- END Checkboxes -->
+        </fieldset>
+        <!-- Submit buttons -->
+        <input type="submit" value="Submit"> <!--  Note: submit and reset do not need id or name attributes -->
+        <input type="reset"   value="Reset">
+      </form>
+</div><!-- close id="formContainer"-->
+  </body>
+
+</html>

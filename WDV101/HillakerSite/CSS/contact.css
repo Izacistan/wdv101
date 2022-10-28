@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+/*==========================================
+This page is designed with mobile-first in mind.
+Meaning the default styles will be for a vertically
+positioned smartphone. Media queries will be added to
+accomodate for larger screen sizes and
+horizontal orientations.
+=====================================================================================================================================================================================*/
+
+/*==============
+Universal Styles
+===============*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #F5F5F5;
+}
+
+/* Font Styles */
+legend {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+}
+
+
+
+/*===========================================
+PRIMARY GRID SETTINGS / Main Container Styles
+===========================================*/
+
+#mainContainer {
+  font-family: Spartan;
+}
+
+.logo {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/*==================
+Main Navigation Menu
+==================*/
+
+.navContainer {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around; /* Put ample Space between Menu items */
+  align-items: center; /* Center menu items within Nav bar */
+  background-color: black;
+  margin-top: 1em;
+  height: 65px;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  margin: 1em;
+}
+
+/*=========
+Form Styles
+=========*/
+
+#formContainer {
+  margin-top: 25px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.mainContainer {
+  background-color: #333333;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+
+@media only screen and (min-width: 640px) {
+
+  /*===================================================================================
+  Setup Main GRID / Horizontal views mobile, and flexible for vert/horz views on Tablets
+  =====================================================================================*/
+
+  #mainContainer {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 125px repeat(3, 35vw) 1fr;
+    grid-template-areas: /* Use Grid Areas to accurately layout content exactly where needed */
+
+    "logo nav nav"
+    "img img img"
+    "img img img"
+    "img img img"
+    "foot foot foot"
+
+    ;
+  }
+
+  /* Logo and Navigation */
+
+  .logo {
+    grid-area: logo;
+    object-fit: contain;
+    height: 100px;
+    width: 75%;
+    margin: auto;
+  }
+
+  .navContainer {
+    position: static;
+    grid-area: nav;
+    height: 100px;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .button {
+    font-size: 1.3em;
+  }
+
+}
+
+@media only screen and (min-width: 1025px) {
+
+  /*=============================================================
+  Setup MAIN Grid / Flexible grid for Laptop/Desktop screen sizes
+   ============================================================*/
+
+  #mainContainer {
+    width: 80%; /* This makes the whole container slightly smaller than available screen space. */
+    margin: auto; /* Perfeclty center entire menu on screen */
+    margin-top: 2em;
+    grid-gap: 1.6em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 18vw) 300px;
+    grid-template-areas:
+
+      "logo img img img"
+      "nav img img img"
+      "nav img img img"
+      "... foot foot ..."
+    ;
+
+  }
+
+  /* Logo and Main Navigation */
+
+  .logo {
+    height: auto;
+  }
+
+  .navContainer {
+    flex-direction: column; /* Had been set to Row on smaller screens, but we want it stacked on larger screens */
+    height: 100%;
+    width: 80%; /* Allows Navigation to be slightly thinner than image gallery */
+    border-radius: 15px;
+    margin: auto; /* Perfectly center the Navigation menu */
+  }
+
+  .button {
+    font-size: 1.6rem
+  }
+
+  .button:hover {
+    color: green;
+    transition: .2s ease-in-out;
+  }
+
+  /* Image Gallery */
+
+  .img {
+    transition: .3s;
+    border-radius: 15px;
+    filter:grayscale(100%);
+  }
+
+  .img:hover { /* Turns pictures from Gray to Color on hover */
+      transform: scale(1.1); /* Makes images expand on hover */
+      filter: grayscale(0%);
+  }
+
+  /* Footer and Instagram */
+
+  #footContainer {
+    background-color: #f5f5f5;
+    margin: -2em; /* Cuts down on whitespace between Image Gallery and Foot Container */
+  }
+
+  .footTxt {
+    background-color: #f5f5f5;
+    color: black;
+  }
+
+  .emailTxt {
+    font-size: 1.2em;
+    color: black;
+  }
+
+/* Setup Gray to Color Animation on Hover */
+  .iconSocialMobile {
+    filter: grayscale(100%);
+    transition: 0.3s;
+  }
+
+  .iconSocialMobile:hover {
+    filter: grayscale(0%);
+  }
+/* HTML Elements to Ignore / Things I don't want on large screens*/
+
+  .contactBarTxt {
+    display: none;
+  }
+
+  .iconContainer {
+    display: none;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .followMeTxt {
+    display: none;
+  }
+
+}
