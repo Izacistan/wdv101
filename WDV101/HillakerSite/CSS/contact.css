@@ -117,7 +117,7 @@ input[type="text"], input[type="email"] {
 
 .textBox {
   width: 100%;
-  height: 10rem; 
+  height: 10rem;
   margin: 15px 15px 0px 0px
 }
 
@@ -211,9 +211,9 @@ input[type="text"], input[type="email"] {
     grid-template-rows: repeat(3, 18vw) 300px;
     grid-template-areas:
 
-      "logo img img img"
-      "nav img img img"
-      "nav img img img"
+      "logo form form form"
+      "nav form form form"
+      "nav form form form"
       "... foot foot ..."
     ;
 
