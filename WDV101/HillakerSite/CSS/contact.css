@@ -72,7 +72,37 @@ Form Styles
 
 #formContainer {
   margin-top: 25px;
+  padding: 15px;
 }
+
+/* Names and Email area */
+
+legend {
+  font-size: 2.5rem;
+}
+
+.formDescription {
+  padding-left: 5px;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.selected {
+  transition: 0.2s;
+}
+
+.selected:focus {
+  background-color: #125D0D;
+  opacity: 0.5;
+  color: white;
+}
+
+/* Radio buttons */
 
 .cursor {
   cursor: pointer;
@@ -83,6 +113,38 @@ Form Styles
   width: 75%;
   margin: auto;
   text-align: center;
+}
+
+.textBox {
+  width: 100%;
+  height: 10rem; 
+  margin: 15px 15px 0px 0px
+}
+
+.submitBTN {
+  color: black;
+  font-weight: 600;
+  background-color: white;
+  border: solid black 2px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 15px 25px 25px 0px;
+  padding: 20px 30px;
+  border-radius: 0px;
+}
+
+.submitBTN:hover {
+  color: white;
+  background-color: green;
+}
+
+.reset {
+  color: white;
+  background-color: black;
+}
+
+.reset:hover {
+  background-color: maroon;
 }
 
 @media only screen and (min-width: 640px) {
@@ -99,9 +161,9 @@ Form Styles
     grid-template-areas: /* Use Grid Areas to accurately layout content exactly where needed */
 
     "logo nav nav"
-    "img img img"
-    "img img img"
-    "img img img"
+    "form form form"
+    "form form form"
+    "form form form"
     "foot foot foot"
 
     ;
@@ -115,6 +177,10 @@ Form Styles
     height: 100px;
     width: 75%;
     margin: auto;
+  }
+
+  #formContainer {
+    grid-area: form;
   }
 
   .navContainer {

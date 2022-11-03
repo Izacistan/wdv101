@@ -26,22 +26,22 @@
     <div id="formContainer">
       <form id="contact_form" method="post" action="#">
         <legend>Contact Me</legend>
-        <p>If you would like to get in contact with me, please fill out the contact form below.</p>
+        <p class="formDescription">If you would like to get in contact with me, please fill out the contact form below.</p>
         <fieldset>
 
       		<label for="firstname">First Name</label>
-      		<input type="text" id="firstname" name="firstname">
-
-      		<label for="lastname">Last Name</label>
-      		<input type="text" id="lastname" name="lastname">
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email">
-
-          <p>Reason for contacting me (Select one)</p>
+      		<input class="selected" type="text" id="firstname" name="firstname">
           <br>
+      		<label for="lastname">Last Name</label>
+      		<input class="selected" type="text" id="lastname" name="lastname">
+          <br>
+          <label for="email">Email address</label>
+          <input class="selected" type="email" id="email" name="email">
+          <br>
+
           <!-- BEGIN Radio buttons -->
-          <input type="radio" id="business" name="checkBTN" value="Employment">
+          <p>Reason for contacting me (Select one)</p>
+          <input type="radio" id="business" class="radio" name="checkBTN" value="Employment">
       		<label for="business">Employment</label>
       		<br>
       		<input type="radio" id="questions" name="checkBTN" value="General_Questions">
@@ -53,6 +53,7 @@
           <!-- END Radio Buttons -->
 
           <!-- Selection Box -->
+          <br>
           <label for="experience">Experience Level</label><br>
           <select id="experience" name="experience">
             <option value="1year">1 year or less</option>
@@ -78,9 +79,16 @@
           <br>
       		<!-- END Checkboxes -->
         </fieldset>
+
+        <!-- BEGIN Textarea -->
+        <textarea class="textBox" name="message" placeholder="Enter a message..."></textarea>
+        <!-- END Textarea -->
+
         <!-- Submit buttons -->
-        <input type="submit" value="Submit"> <!--  Note: submit and reset do not need id or name attributes -->
-        <input type="reset"   value="Reset">
+        <div class="">
+          <input class="submitBTN" type="submit" value="Submit"> <!--  Note: submit and reset do not need id or name attributes -->
+          <input class="submitBTN reset" type="reset"   value="Reset">
+        </div>
       </form>
 </div><!-- close id="formContainer"-->
   </body>
