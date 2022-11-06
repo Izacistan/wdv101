@@ -1,0 +1,53 @@
+/* UNIVERSAL STYLES */
+
+/* Color Variables */
+:root {
+  --background: #732C1A;
+  --parchment: #D6CCA9;
+  --text: #000000;
+  }
+
+body {
+  background-color: var(--background);
+  font-family: 'Garamond', Helvetica, Arial, Verdana;
+}
+
+main {
+  background-color: var(--parchment);
+  padding: 5%;
+}
+
+/* Heading Styles and Colors */
+h1, h2, h3, p {
+  color: var(--text);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  color: var(--text);
+  font-size: 1.2rem;
+}
+
+ol, li {
+  color: var(--text);
+  font-size: 1.2rem;
+}
+
+img {
+  border: solid black 5px;
+  border-radius: 15px;
+}
+/*=============
+NAVIGTAION MENU
+=============*/
