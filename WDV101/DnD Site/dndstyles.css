@@ -4,22 +4,34 @@
 :root {
   --background: #732C1A;
   --parchment: #D6CCA9;
+  --header: #f8f8ff;
   --text: #000000;
   }
 
 body {
   background-color: var(--background);
   font-family: 'Garamond', Helvetica, Arial, Verdana;
+  margin: auto;
+  width: 85%;
+}
+
+header {
+  text-align: center;
 }
 
 main {
-  background-color: var(--parchment);
+  background-color: var(--parchment);\
+  margin: auto;
   padding: 5%;
 }
 
 /* Heading Styles and Colors */
-h1, h2, h3, p {
+h1, h2, h3 {
   color: var(--text);
+}
+
+.header {
+  color: var(--header)
 }
 
 h1 {
