@@ -14,9 +14,14 @@ header {
 
 
 /* Navigation */
+nav {
+  background-color: #3C4043;
+}
+
 ul {
   display: flex;
   justify-content: space-around;
+  width: 50%;
   list-style: none;
   text-decoration: none;
   padding: 25px;
