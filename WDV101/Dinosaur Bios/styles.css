@@ -1,0 +1,277 @@
+/******************
+DEFAULT TEXT STYLES
+******************/
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Oswald', Helvetica, Arial, Verdana;
+}
+
+h1 {
+  font-size: 4rem;
+  color: var(--darkGreen);
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 0;
+  color: var(--text);
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: var(--text);
+}
+
+h4 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: var(--text);
+}
+
+p {
+  font-family: 'Manrope', Helvetica, Arial, Verdana;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: var(--text);
+}
+
+li {
+  font-family: 'Manrope', Helvetica, Arial, Verdana;
+  list-style: square inside;
+  line-height: 2rem;
+  color: var(--text);
+  font-size: 1.3rem;
+}
+
+a {
+  font-family: 'Manrope', Helvetica, Arial, Verdana;
+}
+
+
+/*******************
+GLOBAL COLOR PALETTE
+*******************/
+
+:root {
+  --darkGreen: #163832;
+  --lightGreen: #DAF1DE;
+  --beige: #FFFBE4;
+  --background: #2D2D2C;
+  --white: #FFF;
+  --text: #595958;
+}
+
+body {
+  background-color: var(--background);
+}
+
+/************************
++++++++++++++++++++++++++
+UNIVERSAL PAGE FORMATTING
++++++++++++++++++++++++++
+
+1. Keeps the main content
+consistent throughout the
+website
+************************/
+
+/*************
+NAVIGATION BAR
+*************/
+
+#mainNav {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  box-shadow: 0px 2px 25px var(--gray);
+  z-index: 10;
+}
+
+#mainNav li {
+  float: right;
+  display: block;
+  list-style: none;
+}
+
+li .navLink {
+  display: block;
+  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+  padding: 35px 35px;
+  text-decoration: none;
+  transition: 0.3s;
+  line-height: initial;
+}
+
+.navLink:hover {
+  color: var(--darkGreen);
+}
+
+/* MAIN STYLES */
+main {
+  margin: 125px auto;
+  width: 100%%;
+}
+
+#basicImg {
+  object-fit: contain;
+  width: 45%;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contentContainer {
+  overflow: auto;
+  width: 100%;
+  margin: 75px auto;
+}
+
+.mainImage {
+  object-fit: contain;
+  width: 25%;
+}
+
+.floatImgLeft {
+  float: left;
+  margin-right: 25px;
+}
+
+.floatImgRight {
+  float: right;
+  margin-left: 25px;
+}
+
+.inTextLink { /* For links within <p> tags. */
+  color: var(--darkGreen);
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.inTextLink:hover {
+  color: var(--lightGreen);
+  cursor: pointer;
+}
+
+/* FOOTER STYLES*/
+
+footer {
+  width: 100%;
+  margin-top: 25px;
+  padding: 25px 0 25px 0;
+  background-color: #333333;
+}
+
+.copyrightTxt {
+  text-align: center;
+  color: white;
+}
+
+/****************
++++++++++++++++++
+INDEX.HTML STYLES
++++++++++++++++++
+****************/
+
+/* Banner */
+
+.overlay {
+  background: rgba(39,62,84,0.82);
+}
+
+.bannerImg {
+  width: 100%;
+  height: 65vh;
+  margin-top: 100px;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+/* GALLERY styles */
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.polaroid {
+  width: 100%;
+  background-color: var(--darkGreen);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.galleryImg {
+  height: 50vh;
+  object-fit: cover;
+}
+
+div.container {
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.species {
+  color: var(--white);
+}
+
+.period {
+  color: var(--lightGreen);
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.YA {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.description {
+  color: var(--white);
+}
+
+@media only screen and (min-width: 640px) {
+  #gallery {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  div.polaroid {
+    width: 45%;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  .species {
+    font-size: 2rem;
+  }
+
+  .period {
+    font-size: 1.7rem;
+  }
+
+  .YA {
+    font-size: 1.5rem;
+  }
+
+  .galleryImg {
+    height: 70vh;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  div.polaroid {
+    width: 32%;
+  }
+}
