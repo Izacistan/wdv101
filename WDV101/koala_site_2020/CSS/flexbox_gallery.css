@@ -2,12 +2,28 @@
 THIS FILE IS FOR GALLERY.HTML ONLY
 ================================*/
 
+
 /* IMAGE styles */
+
+main {
+  margin: auto;
+  width: 90%;
+}
+
+h1 {
+  /* text-align: center; */
+  font-size: 3rem;
+  width: 95%;
+  padding: 20px 25px 20px 25px;
+  margin: auto;
+}
 
 #mainFlexContainer {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  width: 90%;
+  padding: 20px 25px 20px 25px;
   margin: auto;
 }
 
@@ -16,4 +32,22 @@ THIS FILE IS FOR GALLERY.HTML ONLY
   width: 85%;
   height: auto;
   margin-top: 25px;
+}
+
+/*===========
+MEDIA QUERIES
+===========*/
+
+/* Vertical smartphone and tablet */
+@media only screen and (min-width: 640px) {
+  .flexGalleryImg {
+    width: 45%;
+  }
+}
+
+/* Horizontal tablet and larger */
+@media only screen and (min-width: 1025px) {
+  .flexGalleryImg {
+    width: 30%;
+  }
 }
