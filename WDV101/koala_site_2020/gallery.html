@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Koala Bear National Information CENTER</title>
+    <!-- AUTHOR: Isaac Hillaker
+         DATE: September 15, 2022
+         LAST MODIFIED: September 1, 2022-->
+    <meta name="description" content="Home page for Koala Bear National Information Center">
+    <meta name="keywords" content="koala bear, information center, foundation, donate, KBNIC">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/flexbox_gallery.css">
+    <style>
+      p,
+      ol,
+      ul {
+        font-family: Arial, Verdana, Tahoma;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+
+    <img class="topBanner remove" src="images/koala_banner.jpg" alt="Koala Bear National Information Center Banner">
+
+      <!-- Navigation -->
+    <nav>
+      <ul id="mainNav">
+        <li><a class="navLink" href="index.html">Home</a></li>
+        <li><a class="navLink" href="save_koalas.html">Save Koalas</a></li>
+        <li><a class="navLink" href="faq.html">FAQ</a></li>
+        <!-- THe following three links do NOT have pages yet, so their links are blank. -->
+        <li><a class="navLink" href="#">Gallery</a></li>
+        <li><a class="navLink" href="#">Adopt</a></li>
+        <li><a class="navLink" href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main id="mainFlexContainer">
+      <img class="flexGalleryImg" src="images/koala_gallery/koala_a.jpg" alt="Koala sitting in a tree">
+      <img class="flexGalleryImg" src="images/koala_gallery/koala_b.jpg" alt="Koala smiling at the camera">
+      <img class="flexGalleryImg" src="images/koala_gallery/koala_c.jpg" alt="Koala napping in a tree">
+      <img class="flexGalleryImg" src="images/koala_gallery/koala_d.jpg" alt="Bored koala in a tree">
+      <img class="flexGalleryImg" src="images/koala_gallery/koala_e.jpg" alt="Two koalas looking at something off camera">
+      <img class="flexGalleryImg" src="images/koala_gallery/koala_f.jpg" alt="A koala partially obscured by a leaf">
+      <img class="flexGalleryImg" src="images/koala_gallery/koala_g.jpg" alt="A lone koala sitting on a beach">
+      <img class="flexGalleryImg" src="images/koala_gallery/koala_h.jpg" alt="A koala napping in a tree">
+      <img class="flexGalleryImg" src="images/koala_gallery/koala_i.jpg" alt="Two koalas cuddling in a tree">
+      <!-- <img class="flexGalleryImg" src="images/koala_gallery/koala_j.jpg" alt=""> -->
+    </main>
+
+    <!--
+    toPageTop link takes the user from the bottom all the way back to the top of the page.
+    DIV starts on line on page, so it is not inline with the <a>'s above.
+    -->
+    <footer>
+      <div class="internalFootFlex">
+        <div class="">
+          <a class="toTopLink" href="#pageTop">To Top of Page</a>
+        </div>
+        <!-- CSS Validator Button -->
+        <a  href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="https://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!"/>
+        </a>
+      </div> <!-- End: .internalFootFlex -->
+      <div class="copyrightContainer">
+        <p class="copyrightTxt">© 2020 All rights reserved.</p><img class="smallLogo" src="images/koala_logo.gif" alt="Koala Bear National Information Center Logo">
+      </div>
+    </footer>
+
+  </body>
+</html>
