@@ -1,0 +1,120 @@
+/* Declare style variables */
+
+:root {
+  --background: #B3C5DD;
+  --green: green;
+  --red: red;
+  }
+
+
+body {
+
+}
+
+.main_container {
+  border: solid 3px black;
+  border-radius: 15px;
+  width: 80%;
+  margin: 25px auto;
+  padding: 25px;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--background);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+form div {
+  margin-top: 15px;
+}
+
+form div input {
+  width: 100%;
+  height: 35px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.radio_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio_container input {
+  width: auto;
+  height: 15px;
+}
+
+/* SUBMIT buttons */
+.button_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit_button {
+  margin-top: 15px;
+  height: 50px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+  transition: 0.2s;
+}
+
+.green {
+  background-color: var(--green);
+}
+
+.green:hover {
+  opacity: 0.5;
+}
+
+.red {
+  background-color: var(--red);
+}
+
+.red:hover {
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 640px) {
+
+  /*===================================================================================
+  Setup Main GRID / Horizontal views mobile, and flexible for vert/horz views on Tablets
+  =====================================================================================*/
+
+  .form_box {
+    display: flex;
+  }
+
+  .form_box label{
+    flex-basis: 7rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .button_container {
+    flex-direction: row;
+  }
+
+  .submit_button {
+    margin-right: 25px;
+    width: 25%;
+  }
+
+  .radio_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .message_area {
+    width: 100%;
+  }
+}
