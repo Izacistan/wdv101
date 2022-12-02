@@ -6,11 +6,7 @@
   --red: red;
   }
 
-
-body {
-
-}
-
+/* Main Container Styles */
 .main_container {
   border: solid 3px black;
   border-radius: 15px;
@@ -22,6 +18,7 @@ body {
   background-color: var(--background);
 }
 
+/* Form Styles */
 form {
   display: flex;
   flex-direction: column;
@@ -42,6 +39,7 @@ label {
   font-weight: bold;
 }
 
+/* RADIO Buttons */
 .radio_container {
   display: flex;
   flex-direction: column;
@@ -88,7 +86,7 @@ label {
   /*===================================================================================
   Setup Main GRID / Horizontal views mobile, and flexible for vert/horz views on Tablets
   =====================================================================================*/
-
+  /* Make Labels align horizontally with input areas */
   .form_box {
     display: flex;
   }
@@ -99,6 +97,7 @@ label {
     flex-shrink: 0;
   }
 
+  /* Align submit buttons */
   .button_container {
     flex-direction: row;
   }
@@ -108,12 +107,14 @@ label {
     width: 25%;
   }
 
+  /* Horizontally align radio buttons */
   .radio_container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
+  /* Stretch message area to fill screen */
   .message_area {
     width: 100%;
   }
