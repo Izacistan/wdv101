@@ -2,17 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap Template</title>
+    <title>Dungeons and Dragons: Basic Rules</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../DnD Site/dndstyles.css">
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-md">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-xxl">
-          <a href="#" class="navbar-brand">
-            <img src="../DnD Site/IMG/d20_logo.jpg" alt="" style="height: 100px;">
-          </a>
           <!-- Toggle Button for Mobile Nav -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
@@ -33,13 +30,7 @@
                 <a class="nav-link" href="#">Game Dice</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Races</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Learn More</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-success" href="https://www.dndbeyond.com/sources/basic-rules">Basic Rules Full Book</a>
+                <a class="btn btn-lg btn-success" href="https://www.dndbeyond.com/sources/basic-rules">Basic Rules Full Book</a>
               </li>
             </ul>
           </div>
@@ -47,87 +38,127 @@
         </div>
       </nav>
     </div><!-- end NAV container -->
+
+    <!--**********************
+    MAIN CONTENT and JUMBOTRON
+    ***********************-->
     <header>
-      <h1 class="header">DUNGEONS AND DRAGONS</h1>
-      <h2 class="header">THE BASICS</h2>
+      <div class="text-white rounded banner">
+            <h1 class="text-start header">DUNGEONS AND DRAGONS</h1>
+            <h2 class="text-start header">THE BASICS</h2>
+      </div>
     </header>
-    <main id="mainContainer">
-      <p>The many worlds of the Dungeons & Dragons game are places of
-        magic and monsters, of brave warriors and spectacular adventures.
-        They begin with a foundation of medieval fantasy and then add the
-        creatures, places, and magic that make these worlds unique.</p>
-      <img src="IMG/lostMinesOfPhandelver.jpg" alt="A Dungeons and Dragons party facing a green dragon">
-      <p>All these worlds share characteristics, but each world is set apart
-        by its own history and cultures, distinctive monsters and races,
-        fantastic geography, ancient dungeons, and scheming villains. Some
-        races have unusual traits in different worlds. The halflings of the
-        Dark Sun setting, for example, are jungle-dwelling cannibals, and
-        the elves are desert nomads. Some worlds feature races unknown in
-        other settings, such as Eberron’s warforged, soldiers created and
-        imbued with life to fight in the Last War. Some worlds are dominated
-         by one great story, like the War of the Lance that plays a central
-         role in the Dragonlance setting. But they’re all D&D worlds, and you
-         can use the rules here to create a character and play in any one of
-         them.</p>
-      <p>Your DM might set the campaign on one of these worlds or on one that
-        he or she created. Because there is so much diversity among the worlds
-        of D&D, you should check with your DM about any house rules that will
-        affect your play of the game. Ultimately, the Dungeon Master is the
-        authority on the campaign and its setting, even if the setting is a
-        published world.</p>
 
-      <h2>How to Play</h2>
-      <p>The play of the Dungeons & Dragons game unfolds according to this basic pattern.</p>
-      <ol>
-        <li><strong>The DM describes the environment.</strong> The DM tells the players where
-          their adventurers are and what’s around them, presenting the basic
-          scope of options that present themselves (how many doors lead out of
-           a room, what’s on a table, who’s in the tavern, and so on).
-        </li>
-        <li><strong>The players describe what they want to do.</strong> Sometimes one player
-          speaks for the whole party, saying, “We’ll take the east door,” for
-          example. Other times, different adventurers do different things: one
-          adventurer might search a treasure chest while a second examines an
-          esoteric symbol engraved on a wall and a third keeps watch for
-          monsters. The players don’t need to take turns, but the DM listens
-          to every player and decides how to resolve those actions.
-          Sometimes, resolving a task is easy. If an adventurer wants to walk
-          across a room and open a door, the DM might just say that the door
-          opens and describe what lies beyond. But the door might be locked,
-          the floor might hide a deadly trap, or some other circumstance might
-           make it challenging for an adventurer to complete a task. In those
-           cases, the DM decides what happens, often relying on the roll of a
-           die to determine the results of an action.
-         </li>
-        <li><strong>The DM narrates the results of the adventurers’ actions.</strong>
-          Describing the results often leads to another decision point,
-          which brings the flow of the game right back to step 1.
-        </li>
-      </ol>
-
-      <h3>Game Dice</h3>
-      <p>The game uses polyhedral dice with different numbers of sides.
-        You can find dice like these in game stores and in many bookstores.</p>
-      <img src="IMG/dice.png" alt="A graphic of the seven dice used in Dungeons and Dragons">
-      <p>In these rules, the different dice are referred to by the letter d followed
-        by the number of sides: d4, d6, d8, d10, d12, and d20. For instance, a d6 is a
-        six-sided die (the typical cube that many games use).</p>
-      <p>Percentile dice, or d100, work a little differently. You generate a number
-        between 1 and 100 by rolling two different ten-sided dice numbered from 0 to 9.
-        One die (designated before you roll) gives the tens digit, and the other gives the
-        ones digit. If you roll a 7 and a 1, for example, the number rolled is 71. Two 0s
-        represent 100. Some ten-sided dice are numbered in tens (00, 10, 20, and so on),
-        making it easier to distinguish the tens digit from the ones digit. In this case,
-        a roll of 70 and 1 is 71, and 00 and 0 is 100.</p>
-      <p>When you need to roll dice, the rules tell you how many dice to roll of a certain type,
-        as well as what modifiers to add. For example, “3d8 + 5” means you roll three eight-sided
-        dice, add them together, and add 5 to the total.</p>
-      <p>The same d notation appears in the expressions “1d3” and “1d2.” To simulate the roll of
-        1d3, roll a d6 and divide the number rolled by 2 (round up). To simulate the roll of 1d2,
-        roll any die and assign a 1 or 2 to the roll depending on whether it was odd or even.
-        (Alternatively, if the number rolled is more than half the number of sides on the die,
-        it’s a 2.)</p>
-    </main>
+    <div class="container-fluid main-content-styles">
+      <div class="row"> <!-- Row start -->
+        <div class="col-md-6"> <!-- Col 1 start -->
+          <h2>A World of Adventure</h2>
+          <p>The many worlds of the Dungeons & Dragons game are places of
+            magic and monsters, of brave warriors and spectacular adventures.
+            They begin with a foundation of medieval fantasy and then add the
+            creatures, places, and magic that make these worlds unique.</p>
+          <p>All these worlds share characteristics, but each world is set apart
+            by its own history and cultures, distinctive monsters and races,
+            fantastic geography, ancient dungeons, and scheming villains. Some
+            races have unusual traits in different worlds. The halflings of the
+            Dark Sun setting, for example, are jungle-dwelling cannibals, and
+            the elves are desert nomads. Some worlds feature races unknown in
+            other settings, such as Eberron’s warforged, soldiers created and
+            imbued with life to fight in the Last War. Some worlds are dominated
+             by one great story, like the War of the Lance that plays a central
+             role in the Dragonlance setting. But they’re all D&D worlds, and you
+             can use the rules here to create a character and play in any one of
+             them.</p>
+          <p>Your DM might set the campaign on one of these worlds or on one that
+            he or she created. Because there is so much diversity among the worlds
+            of D&D, you should check with your DM about any house rules that will
+            affect your play of the game. Ultimately, the Dungeon Master is the
+            authority on the campaign and its setting, even if the setting is a
+            published world.</p>
+          <h3>Game Dice</h3>
+          <p>The game uses polyhedral dice with different numbers of sides.
+            You can find dice like these in game stores and in many bookstores.</p>
+          <img src="../DnD Site/IMG/dice.png" alt="A graphic of the seven dice used in Dungeons and Dragons">
+          <p>In these rules, the different dice are referred to by the letter d followed
+            by the number of sides: d4, d6, d8, d10, d12, and d20. For instance, a d6 is a
+            six-sided die (the typical cube that many games use).</p>
+          <p>Percentile dice, or d100, work a little differently. You generate a number
+            between 1 and 100 by rolling two different ten-sided dice numbered from 0 to 9.
+            One die (designated before you roll) gives the tens digit, and the other gives the
+            ones digit. If you roll a 7 and a 1, for example, the number rolled is 71. Two 0s
+            represent 100. Some ten-sided dice are numbered in tens (00, 10, 20, and so on),
+            making it easier to distinguish the tens digit from the ones digit. In this case,
+            a roll of 70 and 1 is 71, and 00 and 0 is 100.</p>
+          <p>When you need to roll dice, the rules tell you how many dice to roll of a certain type,
+            as well as what modifiers to add. For example, “3d8 + 5” means you roll three eight-sided
+            dice, add them together, and add 5 to the total.</p>
+          <p>The same d notation appears in the expressions “1d3” and “1d2.” To simulate the roll of
+            1d3, roll a d6 and divide the number rolled by 2 (round up). To simulate the roll of 1d2,
+            roll any die and assign a 1 or 2 to the roll depending on whether it was odd or even.
+            (Alternatively, if the number rolled is more than half the number of sides on the die,
+            it’s a 2.)</p>
+        </div> <!-- Col 1 end -->
+        <div class="col-md-6"> <!-- Col 2 start -->
+          <h2>How to Play</h2>
+          <p>The play of the Dungeons & Dragons game unfolds according to this basic pattern.</p>
+          <ol>
+            <li><strong>The DM describes the environment.</strong> The DM tells the players where
+              their adventurers are and what’s around them, presenting the basic
+              scope of options that present themselves (how many doors lead out of
+               a room, what’s on a table, who’s in the tavern, and so on).
+            </li>
+            <li><strong>The players describe what they want to do.</strong> Sometimes one player
+              speaks for the whole party, saying, “We’ll take the east door,” for
+              example. Other times, different adventurers do different things: one
+              adventurer might search a treasure chest while a second examines an
+              esoteric symbol engraved on a wall and a third keeps watch for
+              monsters. The players don’t need to take turns, but the DM listens
+              to every player and decides how to resolve those actions.
+              Sometimes, resolving a task is easy. If an adventurer wants to walk
+              across a room and open a door, the DM might just say that the door
+              opens and describe what lies beyond. But the door might be locked,
+              the floor might hide a deadly trap, or some other circumstance might
+               make it challenging for an adventurer to complete a task. In those
+               cases, the DM decides what happens, often relying on the roll of a
+               die to determine the results of an action.
+             </li>
+            <li><strong>The DM narrates the results of the adventurers’ actions.</strong>
+              Describing the results often leads to another decision point,
+              which brings the flow of the game right back to step 1.
+            </li>
+          </ol>
+          <h2>D&D Artwork</h2>
+          <p>Browse some D&D artwork from modern times back to the original game in the late 1970s.</p>
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../DnD Site/IMG/lost mines.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../DnD Site/IMG/saltmarsh.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../DnD Site/IMG/retro_dnd.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <h2>Learn More by Accessing D&D Beyond</h2>
+          <p>D&D Beyond is the official website for all things Dungeons and Dragons. It contains the Basic Rules for free, as well as
+          a free, pre-written adventure called "The Lost Mines of Phandelver." If you ever feel like elevating your D&D play,
+          you can also purchse additional books and other content through D&D Beyond.</p>
+          <p>Start your journey by clicking the button below!</p>
+          <a class="btn btn-lg btn-success" type="button" name="button" href="https://www.dndbeyond.com/">D&D Beyond</a>
+        </div> <!-- Col 2 end -->
+      </div> <!-- Row end -->
+    </div> <!-- Container end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 

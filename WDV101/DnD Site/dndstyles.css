@@ -11,17 +11,10 @@
 body {
   background-color: var(--background);
   font-family: 'Garamond', Helvetica, Arial, Verdana;
-  margin: auto;
-  width: 85%;
 }
 
-header {
-  text-align: center;
-}
-
-main {
-  background-color: var(--parchment);\
-  margin: auto;
+.main-content-styles {
+  background-color: var(--parchment);
   padding: 5%;
 }
 
@@ -31,14 +24,24 @@ h1, h2, h3 {
 }
 
 .header {
-  color: var(--header)
+  color: var(--header);
+  font-weight: bold;
 }
 
 img {
-  border: solid black 5px;
-  border-radius: 15px;
   width: 100%;
 }
 /*=============
 NAVIGTAION MENU
 =============*/
+.nav-link {
+  font-size: 1.3rem;
+}
+
+.banner {
+  background-image: url("../DnD Site/IMG/lost mines.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 8rem;
+  width: 100%;
+}
