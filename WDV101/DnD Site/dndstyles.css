@@ -34,31 +34,10 @@ h1, h2, h3 {
   color: var(--header)
 }
 
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-p {
-  color: var(--text);
-  font-size: 1.2rem;
-}
-
-ol, li {
-  color: var(--text);
-  font-size: 1.2rem;
-}
-
 img {
   border: solid black 5px;
   border-radius: 15px;
+  width: 100%;
 }
 /*=============
 NAVIGTAION MENU
