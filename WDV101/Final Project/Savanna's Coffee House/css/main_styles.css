@@ -53,6 +53,10 @@ HOME PAGE STYLES
 .cta-container {
   margin-top: 2rem;
 }
+
+#menu {
+  flex-direction: row-reverse;
+}
 /*===========
 MEDIA QUERIES
 ===========*/
