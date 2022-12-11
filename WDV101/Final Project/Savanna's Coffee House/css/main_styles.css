@@ -1,0 +1,58 @@
+/*=================
+TYPOGRAPHY SETTINGS
+=================*/
+
+/* Color Variables */
+:root {
+  --background: #f8f8ff;
+  --parchment: #D6CCA9;
+  --header: #f8f8ff;
+  --text: #000000;
+  }
+
+/* Font Family and Font sizes */
+* {
+  font-family: 'Manrope', sans-serif, Helvetica, Arial, Verdana
+}
+
+body {
+  background-color: #f8f8ff;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 4rem;
+  color: var(--header);
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px #000000;
+  }
+
+p {
+  font-size: 1.2rem;
+}
+
+img {
+  width: 100%;
+}
+
+/*==============
+HOME PAGE STYLES
+==============*/
+
+.banner {
+  background-image: url("../img/coffee_shop_outside.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem;
+  width: 100%;
+}
+
+.cta-container {
+  margin-top: 2rem;
+}
+/*===========
+MEDIA QUERIES
+===========*/
