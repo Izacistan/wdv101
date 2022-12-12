@@ -26,10 +26,6 @@ h1 {
   text-shadow: 2px 2px 4px #000000;
 }
 
-.text-shadow {
-  text-shadow: 2px 2px 4px #000000;
-  }
-
 p {
   font-size: 1.2rem;
 }
@@ -38,8 +34,22 @@ img {
   width: 100%;
 }
 
-.button:hover {
-  color: pink;
+/* Classes for special formatting cases*/
+
+.text-shadow {
+  text-shadow: 2px 2px 4px #000000;
+  }
+
+.img-shadow {
+  box-shadow: 5px 5px 10px gray;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.super-padding {
+  padding: 10%;
 }
 
 /*==============
@@ -52,6 +62,7 @@ HOME PAGE STYLES
           rgba(0, 0, 0, 0.7)
         ), url("../img/coffee_shop_outside.jpg");
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   padding: 4rem;
   width: 100%;
@@ -65,16 +76,25 @@ HOME PAGE STYLES
   margin-top: 8rem;
 }
 
-.row-reverse { /* This class reverse the rows on mobile so that the columns appear to alternate. */
-  flex-direction: row-reverse;
-}
-
-.banner_pastry {
+.banner_food {
   background-image: linear-gradient(
           rgba(0, 0, 0, 0.7),
           rgba(0, 0, 0, 0.7)
         ), url("../img/pastry_case.jpg");
   background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 6rem;
+  width: 100%;
+}
+
+.banner_events {
+  background-image: linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.7)
+        ), url("../img/live_music.jpg");
+  background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   padding: 6rem;
   width: 100%;
@@ -85,7 +105,7 @@ MEDIA QUERIES
 ===========*/
 
 @media only screen and (min-width: 992px) {
-
+  /* Gives the home_banner more padding on larger screens. */
   .banner_home {
     padding: 8rem;
     margin-bottom: 4rem;
