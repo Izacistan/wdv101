@@ -12,7 +12,7 @@ TYPOGRAPHY SETTINGS
 
 /* Font Family and Font sizes */
 * {
-  font-family: 'Manrope', sans-serif, Helvetica, Arial, Verdana
+  font-family: 'Manrope', sans-serif, Helvetica, Arial, Verdana;
 }
 
 body {
@@ -64,6 +64,10 @@ li {
   padding: 10%;
 }
 
+.row {
+  margin-right: 0;
+}
+
 /*==============
 HOME PAGE STYLES
 ==============*/
@@ -105,6 +109,18 @@ HOME PAGE STYLES
           rgba(0, 0, 0, 0.7),
           rgba(0, 0, 0, 0.7)
         ), url("../img/live_music.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 6rem;
+  width: 100%;
+}
+
+.banner_contact {
+  background-image: linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.7)
+        ), url("../img/latte_on_platter.jpg");
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
