@@ -15,37 +15,6 @@ TYPOGRAPHY SETTINGS
   font-family: 'Manrope', sans-serif, Helvetica, Arial, Verdana;
 }
 
-body {
-  background-color: #f8f8ff;
-}
-
-h1 {
-  font-weight: bold;
-  font-size: 4rem;
-  color: var(--header);
-  text-shadow: 2px 2px 4px #000000;
-}
-
-p {
-  font-size: 1.2rem;
-}
-
-img {
-  width: 100%;
-}
-
-ul {
-  text-align: left;
-  padding-left: 0;
-}
-
-li {
-  text-decoration: none;
-  list-style: none;
-  font-size: 1.1rem;
-  line-height: 2rem;
-}
-
 /* Classes for special formatting cases*/
 
 .text-shadow {
@@ -69,7 +38,7 @@ li {
 }
 
 /*==============
-HOME PAGE STYLES
+MAIN PAGE STYLES
 ==============*/
 
 .banner_home {
@@ -124,8 +93,73 @@ HOME PAGE STYLES
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  padding: 6rem;
+  padding: 3rem;
   width: 100%;
+}
+
+.footer-link {
+  transition: 0.2s;
+}
+
+.footer-link:hover {
+  transform: scale(1.1);
+}
+
+/*=================
+CONTACT FORM STYLES
+=================*/
+
+.main_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+form div {
+  margin-top: 15px;
+}
+
+form div input {
+  width: 100%;
+  height: 35px;
+}
+
+label {
+  font-weight: bold;
+}
+
+/* RADIO Buttons */
+.radio_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio_container input {
+  width: auto;
+  height: 15px;
+}
+
+/* SUBMIT buttons */
+.button_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit_button {
+  margin-top: 15px;
+  height: 50px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+  transition: 0.2s;
 }
 
 /*===========
@@ -139,4 +173,10 @@ MEDIA QUERIES
     margin-bottom: 4rem;
   }
 
+}
+
+@media only screen and (min-width: 1200px) {
+  .main_container {
+    width: 60%;
+  }
 }
