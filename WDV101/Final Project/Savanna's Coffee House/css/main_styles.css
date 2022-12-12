@@ -38,12 +38,19 @@ img {
   width: 100%;
 }
 
+.button:hover {
+  color: pink;
+}
+
 /*==============
 HOME PAGE STYLES
 ==============*/
 
-.banner {
-  background-image: url("../img/coffee_shop_outside.jpg");
+.banner_home {
+  background-image: linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.7)
+        ), url("../img/coffee_shop_outside.jpg");
   background-position: center;
   background-repeat: no-repeat;
   padding: 4rem;
@@ -55,8 +62,24 @@ HOME PAGE STYLES
 }
 
 #menu {
+  margin-top: 8rem;
+}
+
+.row-reverse { /* This class reverse the rows on mobile so that the columns appear to alternate. */
   flex-direction: row-reverse;
 }
+
+.banner_pastry {
+  background-image: linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.7)
+        ), url("../img/pastry_case.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 6rem;
+  width: 100%;
+}
+
 /*===========
 MEDIA QUERIES
 ===========*/
