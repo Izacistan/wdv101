@@ -83,3 +83,12 @@ HOME PAGE STYLES
 /*===========
 MEDIA QUERIES
 ===========*/
+
+@media only screen and (min-width: 992px) {
+
+  .banner_home {
+    padding: 8rem;
+    margin-bottom: 4rem;
+  }
+
+}
