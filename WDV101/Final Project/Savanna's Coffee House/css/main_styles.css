@@ -65,7 +65,7 @@ li {
 }
 
 /*==============
-HOME PAGE STYLES
+MAIN PAGE STYLES
 ==============*/
 
 .banner_home {
@@ -110,6 +110,17 @@ HOME PAGE STYLES
   background-repeat: no-repeat;
   padding: 6rem;
   width: 100%;
+}
+
+/* Footer Styles */
+.foot-list-item a {
+  text-decoration: none;
+}
+
+.copyright-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*===========
