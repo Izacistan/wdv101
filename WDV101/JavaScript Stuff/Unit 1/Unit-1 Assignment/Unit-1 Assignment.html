@@ -24,9 +24,12 @@ div#container	{
 
     <script>
       //B. Add a script within the following element to output your name in place of yourName
-			console.log("The push worked!")
+      document.addEventListener("DOMContentLoaded", function() {
+        var changeH2 = document.querySelector("h2");
+        changeH2.innerHTML = changeH2.innerHTML.replace("yourname", "Isaac");
+      });
     </script>
-
+    
     <h2>Hello yourname! Welcome to JavaScript</h2>
 
     <h2>Introduction to Javascript - Assignment 1</h2>
@@ -37,19 +40,31 @@ div#container	{
 			document.write( "<h3>Assignment 1</h3>");
     </script>
 
-
     <p>Tasks:</p>
     <p>1. Check the instructions are in the code.</p>
     <p>2. Create a run time script that will display your name and major on the page AND on the console log.</p>
     <p>3. Fix the run time script on the bottom of this page.</p>
 
     <script>
-      //C. add a script that will output a p element to the page that says "I wrote this with JavaScript!"
+      document.write("<h4>Name: Isaac Hillaker</h4>");
+      document.write("<h4>Major: Computer Information Systems</h4>");
+      console.log("Name: Isaac Hillaker");
+      console.log("Major: Computer Information Systems");
     </script>
 
     <script>
-		  Alert('You are on your way to working with Javascript');
-	  </script>
+      var addParagraph = document.createElement("p");
+      
+      addParagraph.textContent = "I wrote this with JavaScript!";
+      
+      var containerDiv = document.getElementById("container");
+      
+      containerDiv.appendChild(addParagraph);
+    </script>
+
+    <script>
+      alert('You are on your way to working with Javascript');
+    </script>
 
 </div>
 
