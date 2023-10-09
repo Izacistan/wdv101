@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cat_styles.css">
+    <title>5-1 Event Handlers - Hillaker</title>
+    <script>
+        // Create one or more basic functions that will call a function that displays a message to the console.
+        function showMessage(message) {
+            console.log(message);
+        }
+
+        // 1. Create a button element and apply an onclick event handler
+        function onButtonClick() {
+            showMessage("button CLICKED!");
+        }
+
+        // 2. Create a p element and apply an onmouseover event handler
+        function onParagraphHover() {
+            showMessage("HOVER detected!");
+        }
+
+        // 3. Place an image on the page.  Apply an onmouseout event handler to the image
+        function onImageMouseOut() {
+            showMessage("Mouse Out of Image!");
+        }
+
+        // 4. Create a select element and apply an onchange event handler.  Make sure to include a default option element so that the event handler will work as expected.
+        function onSelectionChange() {
+            var selectedOption = document.getElementById("mySelect").value;
+            showMessage("Selected Option: " + selectedOption);
+        }
+
+        // 5. Apply the onload event handler to the body element
+        function onPageLoad() {
+            showMessage("Page Loaded!");
+        }
+    </script>
+</head>
+<body onload="onPageLoad()">
+    <h1>5-1 Event Handlers - Hillaker</h1>
+    <h2>Open Your Console</h2>
+    <button onclick="onButtonClick()">Click Me</button>
+    <p onmouseover="onParagraphHover()">Hover over this paragraph.</p>
+    <img src="images/orange_cat.jpg" alt="An image of an orange cat" onmouseout="onImageMouseOut()">
+    <select id="mySelect" onchange="onSelectionChange()">
+        <option value="default">Select an option</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select>
+</body>
+</html>
