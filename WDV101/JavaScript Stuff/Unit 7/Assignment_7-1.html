@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Number Generator - Hillaker</title>
+  <script>
+
+    function generateRandomNumber(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("generateButton").addEventListener("click", function () {
+        var randomNum = generateRandomNumber(1, 10);
+        document.getElementById("randomNumber").innerHTML = "Random Number: " + randomNum;
+      });
+    });
+
+  </script>
+
+  <style>
+    body {
+      text-align: center;
+    }
+    
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Random Number Generator - Hillaker</h1>
+  <button id="generateButton">Generate Random Number</button>
+  <p id="randomNumber"></p>
+</body>
+
+</html>
