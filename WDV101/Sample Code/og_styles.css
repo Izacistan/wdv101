@@ -1,3 +1,154 @@
+/*=========
+LAYOUT
+=========*/
+
+/* Header Menu */
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.invert-color {
+    filter: invert(1);
+}
+
+.header_nav-menu {
+    column-gap: 1.75em;
+}
+
+.wp-block-navigation__responsive-container-close {
+	position: absolute;
+	right: 40px;
+	top: 40px;
+	z-index: 2;
+}
+
+ol.has-background, ul.has-background {
+	padding: 1.25em 3.375em;
+}
+
+/* Patterns */
+
+.page-center {
+    max-width: 1280px !important;
+    margin: auto;
+width: 90%;
+}
+
+.pattern_find-your-track {
+    position: relative;
+}
+
+.pattern_speaker-grid_wrap .wp-block-group .wp-block-group .wp-block-image img {
+    max-height: 325px;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.pattern_blog-posts .wp-block-query .wp-block-post-template .wp-block-post {
+    display: flex;
+    flex-grow: 1;
+}
+
+.pattern_contact-form_wrap {}
+
+.col-reverse {
+    flex-direction: column-reverse;
+}
+
+.pattern_awards-wrap
+.wp-block-columns {
+    justify-content: space-between;
+}
+
+.find-your-track_columns {
+    width: 100% !important;
+}
+
+.pattern_register-form_wrap .wp-block-group {
+    box-shadow: -10px 10px #FFD700;
+}
+
+/* General Layout */
+
+.yellow-controller-icon {
+    position: absolute;
+    top: 30%;
+    right: 24%;
+    transform: rotate(29deg);
+    z-index: 1;
+}
+.green-controller-icon {
+    position: absolute;
+    top: 46%;
+    right: 18%;
+    transform: rotate(-28deg);
+    z-index: 1;
+}
+
+.black-controller-icon {
+    position: absolute;
+    top: 57%;
+    right: 28%;
+    transform: rotate(6deg);
+    z-index: 1;
+}
+
+.award-position-green {
+    top: -6%
+}
+
+.award-position-yellow {
+    right: 46%;
+}
+
+.absolute {
+    position: absolute !important;
+}
+
+.relative {
+    position: relative;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.blog-featured-image {
+    margin-bottom: -3em !important
+}
+
+/****************************
+BACKGROUND EFFECTS AND IMAGES
+****************************/
+
+.pattern_img-left_txt-right .wp-block-columns .wp-block-column .wp-block-image {
+    box-shadow: -10px 10px #FFD700;
+}
+
+.pattern_img-right_txt-left .wp-block-columns .wp-block-column .wp-block-image {
+    box-shadow: 10px 10px #0ce82f;
+}
+
+.yellow-shadow {
+    box-shadow: 10px 10px #FFD700 !important;
+}
+
+.green-shadow {
+    box-shadow: -10px 10px #0ce82f !important;
+}
+
+.purple-gradient-bg {
+    background: hsla(290, 81%, 34%, 1);
+background: linear-gradient(135deg, hsla(290, 81%, 34%, 1) 23%, hsla(261, 84%, 45%, 1) 100%);
+background: -moz-linear-gradient(135deg, hsla(290, 81%, 34%, 1) 23%, hsla(261, 84%, 45%, 1) 100%);
+background: -webkit-linear-gradient(135deg, hsla(290, 81%, 34%, 1) 23%, hsla(261, 84%, 45%, 1) 100%);
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#85109C", endColorstr="#5612D6", GradientType=1 );
+}
+
 /*=============
 TYPOGRAPHY
 =============*/
@@ -95,193 +246,6 @@ ul.page-list li::before {
   margin-left: -1em;
 }
 
-/*=============
-BUTTONS
-=============*/
-
-#gform_submit_button_1 {
-    color: #333333 !important;
-}
-
-.wp-block-button__link, .nav-register-button, #gform_submit_button_2, #gform_submit_button_1 {
-  color: #FFFFFF;
-  cursor: pointer;
-  background: none !important;
-  border: none;
-  border: 2px solid 0CE82F;
-  line-height: 1;
-  margin: 0.5em;
-  padding: 1em 2em;
-  box-shadow: 0.3em 0.3em 0 0 #FFd700, inset 0.3em 0.3em 0 0 #FFD700;
-  transition: 0.235s;
-font-weight: 700;
-}
-
-.wp-block-button__link:hover, .nav-register-button:hover, #gform_submit_button_2:hover, #gform_submit_button_1:hover {
-  box-shadow: 0 0 0 0 #0CE82F, inset 6em 3.5em 0 0 #0CE82F;
-  color: #FFFFFF !important;
-}
-
-.nav-register-button a {
-	padding: 1em 2em !important;
-}
-
-.wp-block-button__link:focus{
-  box-shadow: 0 0 0 0 #0CE82F, inset 6em 3.5em 0 0 #0CE82F;
-}
-
-/*=========
-LAYOUT
-=========*/
-
-.page-center {
-    max-width: 1280px !important;
-    margin: auto;
-width: 90%;
-}
-
-.col-reverse {
-    flex-direction: column-reverse;
-}
-
-.yellow-controller-icon {
-    position: absolute;
-    top: 30%;
-    right: 24%;
-    transform: rotate(29deg);
-    z-index: 1;
-}
-.green-controller-icon {
-    position: absolute;
-    top: 46%;
-    right: 18%;
-    transform: rotate(-28deg);
-    z-index: 1;
-}
-
-.black-controller-icon {
-    position: absolute;
-    top: 57%;
-    right: 28%;
-    transform: rotate(6deg);
-    z-index: 1;
-}
-
-.award-position-green {
-    top: -6%
-}
-
-.award-position-yellow {
-    right: 46%;
-}
-
-.absolute {
-    position: absolute !important;
-}
-
-.relative {
-    position: relative;
-}
-
-.justify-between {
-    justify-content: space-between;
-}
-
-/***************
-Header Menu
-***************/
-
-header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 5;
-}
-
-.invert-color {
-    filter: invert(1);
-}
-
-.header_nav-menu {
-    column-gap: 1.75em;
-}
-
-/* Ensure X icon is positioned consistently*/
-.wp-block-navigation__responsive-container-close {
-	position: absolute;
-	right: 40px;
-	top: 40px;
-	z-index: 2;
-}
-
-ol.has-background, ul.has-background {
-	padding: 1.25em 3.375em;
-}
-
-/**************************
-Pattern/Widget Styling
-**************************/
-
-.pattern_img-left_txt-right .wp-block-columns .wp-block-column .wp-block-image {
-    box-shadow: -10px 10px #FFD700;
-}
-
-.pattern_img-right_txt-left .wp-block-columns .wp-block-column .wp-block-image {
-    box-shadow: 10px 10px #0ce82f;
-}
-
-.pattern_find-your-track {
-    position: relative;
-}
-
-.find-your-track_columns {
-    width: 100% !important;
-}
-
-.pattern_speaker-grid_wrap .wp-block-group .wp-block-group .wp-block-image img {
-    max-height: 325px;
-    object-fit: cover;
-    object-position: top center;
-}
-
-.pattern_blog-posts .wp-block-query .wp-block-post-template .wp-block-post {
-    display: flex;
-    flex-grow: 1;
-}
-
-.pattern_awards-wrap
-.wp-block-columns {
-    justify-content: space-between;
-}
-
-.pattern_register-form_wrap .wp-block-group {
-    box-shadow: -10px 10px #FFD700;
-}
-
-.blog-featured-image {
-    margin-bottom: -3em !important
-}
-
-/****************************
-Background Effects and Images
-****************************/
-
-.yellow-shadow {
-    box-shadow: 10px 10px #FFD700 !important;
-}
-
-.green-shadow {
-    box-shadow: -10px 10px #0ce82f !important;
-}
-
-.purple-gradient-bg {
-    background: hsla(290, 81%, 34%, 1);
-background: linear-gradient(135deg, hsla(290, 81%, 34%, 1) 23%, hsla(261, 84%, 45%, 1) 100%);
-background: -moz-linear-gradient(135deg, hsla(290, 81%, 34%, 1) 23%, hsla(261, 84%, 45%, 1) 100%);
-background: -webkit-linear-gradient(135deg, hsla(290, 81%, 34%, 1) 23%, hsla(261, 84%, 45%, 1) 100%);
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#85109C", endColorstr="#5612D6", GradientType=1 );
-}
-
 /*================
 GRAVITY FORMS
 ================*/
@@ -320,9 +284,40 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
   outline: none;
 }
 
-/*================
-WOO COMMERCE
-================*/
+/*=============
+BUTTONS
+=============*/
+
+#gform_submit_button_1 {
+    color: #333333 !important;
+}
+
+.wp-block-button__link, .nav-register-button, #gform_submit_button_2, #gform_submit_button_1 {
+  color: #FFFFFF;
+  cursor: pointer;
+  background: none !important;
+  border: none;
+  border: 2px solid 0CE82F;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  box-shadow: 0.3em 0.3em 0 0 #FFd700, inset 0.3em 0.3em 0 0 #FFD700;
+  transition: 0.235s;
+font-weight: 700;
+}
+
+.wp-block-button__link:hover, .nav-register-button:hover, #gform_submit_button_2:hover, #gform_submit_button_1:hover {
+  box-shadow: 0 0 0 0 #0CE82F, inset 6em 3.5em 0 0 #0CE82F;
+  color: #FFFFFF !important;
+}
+
+.nav-register-button a {
+	padding: 1em 2em !important;
+}
+
+.wp-block-button__link:focus{
+  box-shadow: 0 0 0 0 #0CE82F, inset 6em 3.5em 0 0 #0CE82F;
+}
 
 .woocommerce div.product form.cart button.single_add_to_cart_button, .woocommerce div.product form.cart button[name="add-to-cart"] {
 	display: inline-block;
@@ -345,12 +340,12 @@ WOO COMMERCE
 	color: #333333;
 }
 
-/*================
+/*===========
 MEDIA QUERIES
-================*/
+===========*/
 
 @media only screen and (max-width: 600px) {
-    
+
     .wp-block-navigation__container {
         gap: 2em !important;
     }

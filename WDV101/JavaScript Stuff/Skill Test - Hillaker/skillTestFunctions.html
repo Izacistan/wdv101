@@ -1,0 +1,43 @@
+<!-- 
+    AUTHOR: Isaac Hillaker
+    DATE: 11/01/2023
+
+    NOTES: This is the first skills test for the Intro to JavaScript course.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDV221</title>
+
+    <script>
+
+        function outputCity(inCityName) {
+            console.log(`Student City: ${inCityName}`);
+        }
+
+        function returnCityState(inputCity) {
+            let studentState = "Iowa";
+            let studentCityAndState = inputCity + ", " + studentState;
+            return studentCityAndState;
+        }
+
+    </script>
+</head>
+<body>
+    <script>
+        outputCity("Ames");
+        console.log(returnCityState("Ankeny"));
+    </script>
+
+    <h1>Skill Test - Functions</h1>
+
+    <p>
+        <button onclick="outputCity('Des Moines')">
+            Demonstrate Objects
+        </button>
+    </p>
+
+</body>
+</html>
