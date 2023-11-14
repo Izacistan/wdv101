@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date Format Form - ISaac Hillaker</title>
+  <script>
+    function formatMMDDYYYY(inputDate) {
+      let month = inputDate.getMonth() + 1;
+      let date = inputDate.getDate();
+      let year = inputDate.getFullYear();
+      let formattedDate = month + '/' + date + '/' + year;
+      return formattedDate;
+    }
+
+    function handleSubmit() {
+        
+        let inputDateValue = document.getElementById('dateInput').value;
+
+        // Adjust the date value based on the timezone offset
+        let timezoneOffsetMinutes = new Date().getTimezoneOffset();
+        let adjustedDate = new Date(inputDateValue + 'T00:00:00Z');
+        adjustedDate.setMinutes(adjustedDate.getMinutes() + timezoneOffsetMinutes);
+
+        // Check if the adjusted date is a valid date
+        if (!isNaN(adjustedDate.getTime())) {
+            // Display if date is valid
+            let formattedDateString = formatMMDDYYYY(adjustedDate);
+            document.getElementById('result').innerText = 'Formatted Date: ' + formattedDateString;
+        } else {
+            // Display error message if date is invalid
+            document.getElementById('result').innerText = 'Invalid Date!';
+        }
+    }
+
+  </script>
+</head>
+<body>
+    <h1>Date Object - Isaac Hillaker</h1>
+    <form onsubmit="event.preventDefault(); handleSubmit();">
+        <label for="dateInput">Enter Date:</label>
+        <input type="date" id="dateInput" required>
+        <button type="submit">Format Date</button>
+    </form>
+    <span id="result"></span>
+</body>
+</html>
