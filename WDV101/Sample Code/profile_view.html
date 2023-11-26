@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- 
+    AUTHOR: Isaac Hillaker
+    DATE: 11/21/2023
+    LAST UPDATED: 11/21/2023
+    
+    NOTES:
+    
+    UPDATE: This is currently an extremely basic layout for 
+    the User View. It is divided into two columns: User 
+    Profile (Left) and other users/NPCs (right).
+
+    Headlines are not dynamic at the moment, will attach to 
+    display the user's name.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="profile_styles.css">
+</head>
+<body>
+    <div class="user-profile_sidebar_grid page-center">
+        <!-- Column 1: User Profile & NPCs -->
+        <section id="section_user-profile">
+            <div class="user-profile_wrap">
+                <div class="username_wrap">
+                    <h2>User's Name Here</h2>
+                    <h3>Subtitle</h3>
+                </div>
+                <!-- User's NPCs -->
+                <div id="npc-cards">
+                    <!-- @foreach (NPC npc in Model.NPCs)
+                    {
+                        <partial name="_NPCViewPanel" model="@npc" />
+                    } -->
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Column 2: Sidebar -->
+        <section id="section_user-profile">
+            <div class="user-profile_wrap">
+                <div class="username_wrap">
+                    <h2>User's Name Here</h2>
+                    <h3>Subtitle</h3>
+                </div>
+                <!-- User's NPCs -->
+                <div id="npc-cards">
+                    <!-- @foreach (NPC npc in Model.NPCs)
+                    {
+                        <partial name="_NPCViewPanel" model="@npc" />
+                    } -->
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

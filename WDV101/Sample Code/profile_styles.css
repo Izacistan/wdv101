@@ -1,0 +1,27 @@
+.user-profile_sidebar_grid {
+    display: grid;
+    grid-gap: 1em;
+}
+
+#section_user-profile {
+    border: 5px red solid;
+    min-height: 350px;
+}
+
+.username_wrap h2, .username_wrap h3 {
+    text-align: center;
+}
+
+.page-center {
+    margin: auto;
+    width: 90%;
+    max-width: 1280px;
+}
+
+@media only screen and (min-width: 786px) {
+
+    .user-profile_sidebar_grid {
+        grid-template-columns: auto auto;
+    }
+
+}
