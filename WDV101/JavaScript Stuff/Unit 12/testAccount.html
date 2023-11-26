@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Bank Account</title>
+  <script src="BankAccount.js"></script>
+</head>
+<body>
+  <h1>Test Bank Account - Isaac Hillaker</h1>
+
+  <script>
+    // Example usage of the BankAccount class
+    const myAccount = new BankAccount(1000);
+    myAccount.accountName = "John Doe";
+    myAccount.deposit(500);
+    myAccount.withdraw(200);
+
+    // Display account information on the page
+    const accountInfo = myAccount.accountInfo();
+    const balance = myAccount.balance();
+
+    document.write("<p>Account Name: " + accountInfo[0] + "</p>");
+    document.write("<p>Account Number: " + accountInfo[1] + "</p>");
+    document.write("<p>Account Balance: $" + balance + "</p>");
+  </script>
+</body>
+</html>
