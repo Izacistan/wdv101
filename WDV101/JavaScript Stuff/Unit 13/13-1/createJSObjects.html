@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating JavaScript Objects - Hillaker</title>
+    <script src="masterBook.js"></script>
+</head>
+<body>
+    <h1>Creating JavaScript Objects - Isaac Hillaker</h1>
+    <script>
+        // P1-3. On your page create the javascript parallel arrays shown above.
+        let bookTitles = ["Beginning Javascript", "Logic with ES6", "Javascript Ojbects Made Easy"];
+        let bookPrices = [19.99, 29.49, 999.99];
+        let bookAuthors = ["Smith", "Johson-Parker", "Westin"];
+        
+        /**
+         * P1-4. Create a script that will create and load three book objects 
+         * from the masterBook class called book1, book2, book3 using the 
+         * data from the parallel arrays
+        */
+        let book1 = new MasterBook(bookTitles[0], bookPrices[0], bookAuthors[0]);
+        let book2 = new MasterBook(bookTitles[1], bookPrices[1], bookAuthors[1]);
+        let book3 = new MasterBook(bookTitles[2], bookPrices[2], bookAuthors[2]);
+
+        // P1-5. Display the contents of each book object on the console
+        console.log(book1);
+        console.log(book2);
+        console.log(book3);
+
+        /**
+         * P1-6. Create a Javascript array called javascriptBooks.  Load 
+         * the book objects into the array.
+        */
+        let javascriptBooks = [book1, book2, book3];
+
+        /**
+         * P1-7. Use a loop to process the contents of the javascriptBooks 
+         * array. Display all the information for each book on the 
+         * web page. This includes calling the studentDiscountPrice( )
+        */
+        document.body.appendChild(document.createElement("h2")).textContent = "Global Object Class";
+        for (let bk = 0; bk < javascriptBooks.length; bk++) {
+            document.write(`<h2>Book ${bk + 1}</h2>`);
+            document.write(`<p>Title: ${javascriptBooks[bk].bookTitle}</p>`);
+            document.write(`<p>Author: ${javascriptBooks[bk].bookAuthor}</p>`);
+            document.write(`<p>Price: ${javascriptBooks[bk].bookPrice.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</p>`);
+            document.write(`<p>Discounted Price: ${javascriptBooks[bk].studentDiscountPrice()}</p>`);
+            document.write('<hr>');
+        }
+
+        /**
+         * P2-1. Create a script that will create and load three book 
+         * objects called bookA, bookB, bookC using the object literal { } 
+         * method. Use the same properties and methods from Part 1.
+        */
+        let bookA = {
+            bookTitle: "Jurassic Park",
+            bookPrice: 14.99,
+            bookAuthor: "Crichton, Michael",
+            studentDiscountPrice: function () {
+                let discountedPrice = this.bookPrice * 0.8;
+                return discountedPrice.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+            }
+        };
+
+        let bookB = {
+            bookTitle: "The Lord of the Rings",
+            bookPrice: 49.99,
+            bookAuthor: "Tolkien, John Ronald Reuel",
+            studentDiscountPrice: function () {
+                let discountedPrice = this.bookPrice * 0.8;
+                return discountedPrice.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+            }
+        };
+
+        let bookC = {
+            bookTitle: "Dune",
+            bookPrice: 19.99,
+            bookAuthor: "Herbert, Frank",
+            studentDiscountPrice: function () {
+                let discountedPrice = this.bookPrice * 0.8;
+                return discountedPrice.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+            }
+        };
+
+
+        // P2-2. Display the contents of each book object in the console.
+        console.log(bookA);
+        console.log(bookB);
+        console.log(bookC);
+
+        // P2-3. Create a JavaScript array called newBooks. Load these book objects into the array.
+        let newBooks = [bookA, bookB, bookC];
+
+        /**
+         * P2-4. Use a loop to process the contents of the newBooks array.  
+         * Display all information for each book on the web page.  
+         * This includes calling the studentDiscountPrice( ).
+        */
+        document.body.appendChild(document.createElement("h2")).textContent = "Object Literal Books";
+        for (let bk = 0; bk < newBooks.length; bk++) {
+            document.write(`<h2>New Book ${bk + 1}</h2>`);
+            document.write(`<p>Title: ${newBooks[bk].bookTitle}</p>`);
+            document.write(`<p>Author: ${newBooks[bk].bookAuthor}</p>`);
+            document.write(`<p>Price: ${newBooks[bk].bookPrice.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</p>`);
+            document.write(`<p>Discounted Price: ${newBooks[bk].studentDiscountPrice()}</p>`);
+            document.write('<hr>');
+        }
+    </script>
+</body>
+</html>
