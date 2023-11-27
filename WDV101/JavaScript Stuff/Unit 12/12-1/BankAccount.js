@@ -33,7 +33,7 @@ class BankAccount {
       if (amount <= this._accountBalance) {
         this._accountBalance -= amount;
       } else {
-        console.log("Insufficient funds");
+        console.log("Insufficient funds for transaction");
       }
     }
   
