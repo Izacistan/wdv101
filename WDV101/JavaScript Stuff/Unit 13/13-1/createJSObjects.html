@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creating JavaScript Objects - Hillaker</title>
     <script src="masterBook.js"></script>
+    <script src="displayJSON.js"></script>
 </head>
 <body>
     <h1>Creating JavaScript Objects - Isaac Hillaker</h1>
@@ -107,6 +108,17 @@
             document.write(`<p>Discounted Price: ${newBooks[bk].studentDiscountPrice()}</p>`);
             document.write('<hr>');
         }
+
+        // Display information for each MasterBook on the web page and console
+        displayMasterBook("MasterBook (book1)", book1);
+        displayMasterBook("MasterBook (book2)", book2);
+        displayMasterBook("MasterBook (book3)", book3);
+
+        // Display information for each object literal on the web page and console
+        displayBook("Object Literal (bookA)", bookA);
+        displayBook("Object Literal (bookB)", bookB);
+        displayBook("Object Literal (bookC)", bookC);
+
     </script>
 </body>
 </html>
