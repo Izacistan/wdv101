@@ -29,6 +29,26 @@
       color: #096;
     }
   </style>
+    <script defer>
+      $(document).ready(function () {
+        // 2-1. Assign the event handler to the buttons using jQuery
+        $("#addButton").click(function () {
+          // 3. Retrieve the values from the form and process as directed.
+          var value1 = parseFloat($("#inValue1").val());
+          var value2 = parseFloat($("#inValue2").val());
+  
+          // 4. Display the results on the page
+          var result = value1 + value2;
+          $("#resultsDisplay").text(result);
+        });
+  
+        // 2-2. Assign the event handler to the buttons using jQuery
+        $("#resetButton").click(function () {
+          // 5. The Reset button should also clear the results area of the page
+          $("#resultsDisplay").empty();
+        });
+      });
+    </script>
 </head>
 
 <body>
@@ -67,27 +87,6 @@
       </p>
     </form>
   </div>
-
-  <script>
-    $(document).ready(function () {
-      // 2-1. Assign the event handler to the buttons using jQuery
-      $("#addButton").click(function () {
-        // 3. Retrieve the values from the form and process as directed.
-        var value1 = parseFloat($("#inValue1").val());
-        var value2 = parseFloat($("#inValue2").val());
-
-        // 4. Display the results on the page
-        var result = value1 + value2;
-        $("#resultsDisplay").text(result);
-      });
-
-      // 2-2. Assign the event handler to the buttons using jQuery
-      $("#resetButton").click(function () {
-        // 5. The Reset button should also clear the results area of the page
-        $("#resultsDisplay").empty();
-      });
-    });
-  </script>
 </body>
 
 </html>
