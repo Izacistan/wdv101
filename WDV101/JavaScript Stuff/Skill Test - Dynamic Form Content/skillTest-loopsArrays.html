@@ -1,48 +1,102 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>WDV221 Intro Javascript</title>
+    <meta charset="UTF-8">
+    <title>WDV221 Intro Javascript</title>
+    <script defer>
+        let products = ["Garden Trowel", "Yard Spade", "Planting Spade"];
 
-<script>
+        let productNumbers = ["gt200", "yard-1", "plant-4"];
 
-	var products = ["Garden Trowel","Yard Spade","Planting Spade"];
-	var productNumber = ["gt200","yard-1","plant-4"];
-	
-	var selectionFactors = ["Price","Quality","Reviews","Pictures"];
-	
-	var references = ["Field and Stream","Home and Garden","Plant Life"];
+        let selectionFactors = ["Price", "Quality", "Reviews", "Pictures"];
 
-</script>
+        let references = ["Field and Stream", "Home and Garden", "Plant Life"];
 
+        function populateSelect() {
+			/**
+			 * This function uses the productNumber array to dynamically populate the 
+			 * select menu. It also includes the productNumbers and the values for the various 
+			 * items in the select menu.
+			*/
+            let selectProduct = document.getElementById("selectProduct");
 
+            for (let i = 0; i < products.length; i++) {
+                let option = document.createElement("option");
+                option.value = productNumbers[i];
+                option.text = products[i];
+                selectProduct.add(option);
+            }
+        }
 
+        function createRadioButtons() {
+			/**
+			 * This function uses the selectionFactors array 
+			 * to dynamically create Radio Buttons.
+			*/
+            let radioDiv = document.getElementById("radioDiv");
+
+            for (let i = 0; i < selectionFactors.length; i++) {
+                let radioInput = document.createElement("input");
+                radioInput.type = "radio";
+                radioInput.name = "factor";
+                radioInput.value = selectionFactors[i];
+
+                let label = document.createElement("label");
+                label.appendChild(radioInput);
+                label.appendChild(document.createTextNode(selectionFactors[i]));
+
+                radioDiv.appendChild(label);
+            }
+        }
+
+        function createCheckboxes() {
+			/**
+			 * This function dynamically creates checkboxes using the references array.
+			*/
+            let checkboxDiv = document.getElementById("checkboxDiv");
+
+            for (let i = 0; i < references.length; i++) {
+                let checkboxInput = document.createElement("input");
+                checkboxInput.type = "checkbox";
+                checkboxInput.value = references[i];
+
+                let label = document.createElement("label");
+                label.appendChild(checkboxInput);
+                label.appendChild(document.createTextNode(references[i]));
+
+                checkboxDiv.appendChild(label);
+            }
+        }
+    </script>
 </head>
-
-<body>
-<h1>WDV221 Intro Javascript</h1>
-<h2>Skill Test - Loops and Arrays</h2>
-<form name="form1" method="post" action="">
-  <fieldset>
-  	<label>1. Which product did you purchase?
-  	  <select name="selectProduct" id="selectProduct">
-      </select>
-      <br>
-      <br>
-      2. Please choose the primary factor in why you purchased our product:<br>
-      <br>
-  	3. How did your hear about us? Please select all that apply:<br>
-  	<input type="submit" name="button" id="button" value="Submit">
-  	<input type="reset" name="button2" id="button2" value="Reset">
-  	<br>
-  	</label>
-  	<legend>Your Input Matters</legend>
-  </fieldset>
-</form>
-<h3>Instructions:</h3>
-<p>1. Use the products array and the productNumber array to dynamically populate the select menu. Include the productNumbers as value atttributes.</p>
-<p>2. Use the selectionFactors array to dynamically create a set of radio buttons. </p>
-<p>3. Use the references array to dynamically create a set of check boxes. </p>
-<p>&nbsp;</p>
+<body onload="populateSelect(); createRadioButtons(); createCheckboxes();">
+    <h1>WDV221 Intro Javascript</h1>
+    <h2>Skill Test - Loops and Arrays - Isaac Hillaker</h2>
+    <form name="form1" method="post" action="">
+        <fieldset>
+            <label>
+                1. Which product did you purchase?
+                <select name="selectProduct" id="selectProduct"></select>
+            </label>
+            <br><br>
+            <label>
+                2. Please choose the primary factor in why you purchased our product:
+                <div id="radioDiv"></div>
+            </label>
+            <br><br>
+            <label>
+                3. How did your hear about us? Please select all that apply:
+                <div id="checkboxDiv"></div>
+            </label>
+            <input type="submit" name="button" id="button" value="Submit">
+            <input type="reset" name="button2" id="button2" value="Reset">
+            <br>
+            <legend>Your Input Matters</legend>
+        </fieldset>
+    </form>
+    <h3>Instructions:</h3>
+    <p>1. Use the products array and the productNumber array to dynamically populate the select menu. Include the productNumbers as value attributes.</p>
+    <p>2. Use the selectionFactors array to dynamically create a set of radio buttons.</p>
+    <p>3. Use the references array to dynamically create a set of check boxes.</p>
 </body>
 </html>
